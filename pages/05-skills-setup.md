@@ -65,7 +65,7 @@ Wat de template precies toelaat, staat in .claude/settings.json en in de README:
 - Mag nooit: de geschiedenis op GitHub overschrijven, niet-opgeslagen werk weggooien of je repo verwijderen.
 - Al de rest: je AI vraagt het eerst. Een tool op je laptop installeren, zoals met winget, hoort daarbij.
 
-Dit is de lijst waarvoor Claude Code waarschuwde bij de vertrouwensvraag, op de slide "Open je project". Die vraag zelf herhaal je niet.
+Die lijst geldt zodra je AI in de map van je project werkt. Dat is zo sinds de slide "Start je AI".
 
 Zeg dus niet: druk altijd op Yes. Kies je No, dan gebeurt het niet. Je AI wacht dan op wat je zegt, en je kan gewoon vragen wat het commando doet. Dat hebben we nagekeken in Claude Code 2.1.319. Daar staan ook opties als "don't ask again" en "switch to auto mode" tussen. Die heb je vandaag niet nodig.
 
@@ -98,7 +98,7 @@ Doe het voor op het scherm: typ /setup en toon de eerste vraag. Laat daarna iede
 
 Wat er zeker altijd moet blijven werken, vraagt /setup niet. Je AI schrijft het zelf in PROJECT_OVERVIEW.md, en je ziet het in de samenvatting. De testen hoef je niet zelf te schrijven. Over de vormgeving vraagt het ook niets: het vermeldt alleen dat je project een design system bevat, en dat je AI later een ander kan ontwerpen. Daar gaat de laatste slide van dit deel over.
 
-Wordt /setup niet gevonden? Dan staat Claude Code waarschijnlijk niet in de map van je project. Ga terug naar de slide "Open je project".
+Wordt /setup niet gevonden? Dan werkt je AI waarschijnlijk niet in de map van je project. Ga terug naar de slide "Start je AI".
 
 Geen werkend project door een probleem met de installatie? Werk mee met een buur, zoals afgesproken bij "Ontbreekt er iets?".
 -->
@@ -130,7 +130,7 @@ Waar je op let bij het rondlopen:
 
 Moet de terminal na een installatie opnieuw starten? Je AI legt uit hoe. Typ daarna opnieuw /setup. Het gesprek kan dan opnieuw beginnen, maar je antwoorden heb je nu klaar.
 
-Nog niet aangemeld bij GitHub? /setup kijkt dat na, en vraagt je om in de prompt ! gh auth login te typen.
+Nog niet aangemeld bij GitHub? /setup kijkt dat na, en vraagt je om een terminal te openen in de zijbalk en daar gh auth login te typen, zoals op de slide "Meld je aan bij GitHub".
 
 Tijdslimiet: om 1:11 ga je verder. Wie dan nog bezig is, gebruikt de prompt "Achterop?" en werkt verder tijdens de volgende slides.
 -->

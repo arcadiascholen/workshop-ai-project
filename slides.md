@@ -19,7 +19,7 @@ Je eerste echte project goed starten
 Tijdsplan, 120 minuten. Er is bewust geen vaste pauze: we zien wel wanneer we op de AI moeten wachten.
 
 0:00  Inleiding (5)
-0:05  GitHub-project maken, tools installeren, klonen (20)
+0:05  GitHub-project maken, klonen, tools installeren, project openen (20)
 0:25  Wat hebben we net gedaan? (10)
 0:35  Theorieblok 1: platformen en frameworks (20)
 0:55  Skills en /setup (20)
