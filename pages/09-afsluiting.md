@@ -112,7 +112,7 @@ Om 1:53 ga je verder.
 
 Er gaat regelmatig iets mis. Dat is geen probleem: praat verder met je AI.
 
-- **Een toestemmingsvraag met een technische waarschuwing:** in de test was er niets stuk
+- **Een toestemmingsvraag met een technische waarschuwing:** dat betekent niet dat er iets stuk is
 - **GitHub meldt `Node.js 20 is deprecated`:** niet dringend, de site stond gewoon online
 
 <PromptBlock label="Begrijp je een melding niet?">Wat betekent deze melding? Moet ik iets doen? [plak de melding]</PromptBlock>
