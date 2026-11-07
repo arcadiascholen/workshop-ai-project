@@ -8,6 +8,7 @@ canvasWidth: 980
 transition: none
 drawings:
   enabled: false
+monaco: false
 ---
 
 # Bouwen met AI
