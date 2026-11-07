@@ -8,7 +8,7 @@ eyebrow: Theorie
 <!--
 0:35, 20 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
 
-De slides van dit deel tellen op tot 18 minuten. De overige 2 minuten zijn voor de slide over testen (#9).
+De slides van dit deel tellen op tot 20 minuten.
 -->
 
 ---
@@ -31,7 +31,31 @@ Je vraagt om een app, en je beschrijft wat die moet kunnen. Dit zeg je meestal n
 
 Een ontwikkelaar denkt hier eerst over na, en jij vergeet het. Dat is logisch: je weet nog niet dat deze vragen bestaan. Net door deze keuzes eerst te maken, krijgt je project een stevige basis.
 
-In dit blok gaat het over platformen, opslag en frameworks. Vormgeving en testen komen terug bij /setup. Vlot uitbreiden komt in het tweede theorieblok.
+In dit blok gaat het over testen, platformen, opslag en frameworks. Vormgeving en testen komen terug bij /setup. Vlot uitbreiden komt in het tweede theorieblok.
+-->
+
+---
+
+# Waarom testen?
+
+Een test is een klein stukje code dat controleert of je app nog doet wat je bedoelde.
+
+- Bij elke uitbreiding kan je AI iets stukmaken dat eerder werkte
+- Zonder testen zie je dat pas als je alles zelf opnieuw probeert
+- Vraag je er niet naar, dan ontbreken ze meestal grotendeels
+
+<Callout variant="ai" title="Je moet ze niet zelf schrijven of lezen">De skills zorgen ervoor dat ze er komen, en CI voert ze bij elke PR uit.</Callout>
+
+Uit de oefenapp: de eis "als de uitkomst 1/2 is, telt 2/4 niet" werd een test.
+
+<!--
+2 minuten.
+
+Niet te diep op ingaan. Het gaat om het waarom: je kan niet na elke uitbreiding alles zelf opnieuw proberen.
+
+Hoe de skills dat doen: /setup vraagt wat er zeker altijd moet blijven werken. /create-issues zet testen en CI in het eerste issue. /work-issue schrijft bij elk issue de testen die erbij horen.
+
+De oefenapp voor breuken uit de inleiding is zo gemaakt. De eis over 2/4 kwam van de leerkracht, en staat in PROJECT_OVERVIEW.md. Na PR 10 telt de app 47 testen voor de werking en 24 met de echte app, en die slaagden allemaal in CI.
 -->
 
 ---
