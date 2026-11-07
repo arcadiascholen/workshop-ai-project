@@ -21,3 +21,9 @@ Met `npm run build` maak je een statische versie in `dist/`.
 |---|---|
 | `slides.md` | Instellingen, titelslide en tijdsplan. |
 | `pages/` | Eén bestand per deel van de workshop. |
+| `layouts/` | Layouts voor de titel (`cover`), secties (`section`), inhoud (`default`) en opdrachten (`handson`). |
+| `components/` | `PromptBlock` voor prompts om over te nemen, `Callout` voor tips en waarschuwingen. |
+| `style.css` | De stijl van de slides, op basis van de tokens en met grotere tekst voor de beamer. |
+| `design-system/` | Kopie van het visuele deel van het design system. |
+
+Het donkere thema zet je aan met `colorSchema: dark` bovenaan `slides.md`.

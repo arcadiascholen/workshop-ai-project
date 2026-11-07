@@ -1,5 +1,6 @@
 ---
 layout: section
+eyebrow: Uitleg
 ---
 
 # Wat hebben we net gedaan?

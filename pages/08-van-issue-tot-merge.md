@@ -1,5 +1,6 @@
 ---
 layout: section
+eyebrow: Theorie
 ---
 
 # Van issue tot merge
