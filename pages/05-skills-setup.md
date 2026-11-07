@@ -8,14 +8,14 @@ eyebrow: Zelf doen
 <!--
 0:50, 25 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
 
-Codex: je start een skill met $ in plaats van /, dus $setup. De stappen lopen gelijk. Zie docs/CODEX.md in de template.
+Codex: de stappen lopen gelijk. Zie docs/CODEX.md in de template.
 -->
 
 ---
 
 # Wat is een skill?
 
-Een vaste werkwijze voor je AI. Je start ze met een schuine streep en haar naam.
+Een vaste werkwijze voor je AI. Je start ze met een schuine streep en haar naam. In Codex typ je een dollarteken: `$setup` in plaats van `/setup`.
 
 | Skill | Wat doet ze? |
 |---|---|
@@ -39,7 +39,7 @@ Kort houden. Het enige wat ze moeten onthouden: je typt /naam, en je AI volgt ee
 
 De skills staan in de map .claude/skills van je project. Er zijn er nog meer: /work-issue en /cleanup roept /work-issues zelf op, en met /discuss overleg je met je AI zonder dat die iets aanpast.
 
-/init, dat we straks gebruiken, is geen skill van de template. Dat zit standaard in Claude Code.
+Op de volgende slides staat altijd /setup, /bootstrap-github enzovoort. Wie Codex gebruikt, typt telkens $ in de plaats van /.
 -->
 
 ---
@@ -85,14 +85,15 @@ Eerst maak je samen met je AI duidelijk wat je project wordt.
 <PromptBlock>/setup</PromptBlock>
 
 - Je AI stelt één vraag tegelijk, hooguit een tiental
-- De keuzes ken je uit het theorieblok: opslag, platform en framework
-- Bij technische keuzes doet je AI een voorstel. Jij zegt ja, of dat het anders moet.
+- Weet je het niet? Dan doet je AI een voorstel.
 - Er komt nog geen code: dat gebeurt later, via issues
 
-<!--
-2 minuten.
+<PromptBlock label="Achterop?">Ik heb weinig tijd. Kies voor de rest zelf de eenvoudigste optie, en schrijf PROJECT_OVERVIEW.md. Vermeld wat je koos.</PromptBlock>
 
-Herhaal het theorieblok niet. /setup vraagt eerst wat je wil maken en wat de eerste versie moet kunnen. Daarna komen opslag, platform en framework, met dezelfde woorden als in het theorieblok.
+<!--
+18 minuten: 2 om te starten, daarna 16 om te werken. Laat deze slide staan terwijl iedereen werkt, en loop rond.
+
+Herhaal het theorieblok niet. De keuzes ken je eruit. /setup vraagt eerst wat je wil maken en wat de eerste versie moet kunnen. Daarna komen opslag, platform en framework, met dezelfde woorden als in het theorieblok.
 
 Doe het voor op het scherm: typ /setup en toon de eerste vraag. Laat daarna iedereen zelf starten.
 
@@ -101,32 +102,16 @@ Wat er zeker altijd moet blijven werken, vraagt /setup niet. Je AI schrijft het 
 Wordt /setup niet gevonden? Dan werkt je AI waarschijnlijk niet in de map van je project. Ga terug naar de slide "Start je AI".
 
 Geen werkend project door een probleem met de installatie? Werk mee met een buur, zoals afgesproken bij "Ontbreekt er iets?".
--->
-
----
-layout: handson
----
-
-# Tijdens het gesprek
-
-- **"Ik weet het niet"** is een goed antwoord: je AI doet dan een voorstel
-- Hou de eerste versie klein: wat is het kleinste dat al nuttig is?
-- Spreek ook af wat er **nog niet** in komt
-- Ontbreekt er een tool? Je AI stelt voor om die te installeren. Ga akkoord.
-
-<PromptBlock label="Achterop?">Ik heb weinig tijd. Kies voor de rest zelf de eenvoudigste optie, en schrijf PROJECT_OVERVIEW.md. Vermeld wat je koos.</PromptBlock>
-
-<!--
-16 minuten. Laat deze slide staan terwijl iedereen werkt, en loop rond.
 
 In de test duurde /setup ongeveer 3 minuten, op een snelle machine en met een snelle testpersoon. De skill rekent op ongeveer een kwartier. Er is dus marge, maar reken niet op 3 minuten.
 
 Waar je op let bij het rondlopen:
 
 - Geen idee? Je AI vertrekt van een concrete situatie: wat kost nu veel tijd, of wat begrijpen leerlingen moeilijk?
-- Te grote plannen? Vraag wat de eerste versie zeker moet kunnen. De rest komt onder "Nog niet".
+- Te grote plannen? Vraag wat de eerste versie zeker moet kunnen, en spreek af wat er nog niet in komt. De rest komt onder "Nog niet".
 - Leerlinggegevens? /setup vraagt er niet naar, dus herinner eraan: zeg het zelf tegen je AI. Ook als voorbeeld horen ze niet in een publieke repo.
 - Toestemmingsvraag? Dat is normaal. De uitleg staat op de slide over toestemmingsvragen.
+- Ontbreekt er een tool? Je AI stelt voor om die te installeren. Ga akkoord.
 
 Moet de terminal na een installatie opnieuw starten? Je AI legt uit hoe. Typ daarna opnieuw /setup. Het gesprek kan dan opnieuw beginnen, maar je antwoorden heb je nu klaar.
 
@@ -174,7 +159,7 @@ Open het volledige voorbeeld: github.com/yvanvds/calculate-waveforms/blob/main/P
 
 Laat iedereen de eigen samenvatting nalezen.
 
-Je AI zet het document meteen op GitHub, en noemt daarna de volgende stappen: /bootstrap-github, /init en /create-issues. Dat zijn ook onze volgende stappen. Wacht daar dus nog even mee, zodat je ze samen kan doen.
+Je AI zet het document meteen op GitHub, en noemt daarna de volgende stappen: /bootstrap-github, een prompt om CLAUDE.md bij te werken, en /create-issues. Dat zijn ook onze volgende stappen. Wacht daar dus nog even mee, zodat je ze samen kan doen.
 
 Later aanpassen kan altijd: vraag het gewoon aan je AI.
 
