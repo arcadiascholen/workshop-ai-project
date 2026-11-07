@@ -290,6 +290,7 @@ Alle controles geslaagd? Dan voegt je AI de code van de branch toe aan de hoofdb
 
 - Dit gebeurt vanzelf: je hoeft niets te doen
 - Pas nu verandert je app
+- Bij een website gaat je site daarna vanzelf online
 
 <Callout variant="ai" title="In PR 5">19 seconden na de geslaagde controle voegde de AI alles samen.</Callout>
 
@@ -302,7 +303,7 @@ Een conflict betekent dat er op twee plaatsen iets aan dezelfde code veranderd i
 
 De hoofdbranch heet bij jullie main, de rechte lijn op de slide over branches.
 
-Publiceren is een aparte stap: dat komt in het volgende deel.
+Bij een website start de merge ook de publicatie. Wat dat is en waarom het belangrijk is, komt in het volgende deel.
 -->
 
 ---
@@ -335,14 +336,14 @@ Dit lijkt veel, maar twee skills volstaan.
 
 <PromptBlock label="Laat je AI eraan werken">/work-issues [de nummers, of een korte opdracht]</PromptBlock>
 
-<Callout title="En daarna?">Je bekijkt het resultaat, of je begint aan de volgende reeks.</Callout>
+<Callout title="En daarna?">Je bekijkt het resultaat, en je start een nieuwe reeks met de volgende nummers.</Callout>
 
 <!--
 1 minuut.
 
 Dit is de boodschap om mee te nemen. /create-issues zoekt zelf uit wat er echt aan de hand is en maakt een of meer issues. /work-issues doet alle stappen die je net zag. Een korte opdracht mag ook, zoals: Kies de issues waar je nu mee verder kan. Het neemt nooit meer dan 10 issues in één keer.
 
-In de test duurde /work-issues 1 2 3 4 zo'n 17 minuten op een snelle machine, inclusief CI, merge, cleanup en publicatie. /create-issues en /work-issues voor één klein issue duurden samen ongeveer 6 minuten. Bij jullie kan dat langer duren, dus het is normaal als je AI nog bezig is.
+In de test duurde een reeks van vier issues zo'n 17 minuten op een snelle machine, inclusief CI, merge, cleanup en publicatie. /create-issues en /work-issues voor één klein issue duurden samen ongeveer 6 minuten. Bij jullie kan dat langer duren, dus het is normaal als je AI nog bezig is.
 
 Om 1:45 ga je verder, ook als niet iedereen klaar is.
 -->

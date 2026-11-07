@@ -66,7 +66,7 @@ table {
 
 Open issue 2 op GitHub, en toon de kopjes Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar? Die komen uit de sjablonen van /bootstrap-github. Daarvoor was alleen de prompt van de vorige slide nodig, samen met PROJECT_OVERVIEW.md.
 
-Het eerste issue zet altijd de basis: het framework, de eerste test en CI. De eerste drie issues leveren samen al iets op dat je kan openen en bekijken. Publiceren komt als apart issue op het einde.
+Het eerste issue zet altijd de basis: het framework, de eerste test en CI. Bij een website is het tweede issue publiceren. Samen leveren ze een eenvoudige pagina op die online staat. In de oefenapp staat publiceren nog op issue 4, omdat die test van vóór deze volgorde is. Bij jullie is issue 2 dus iets anders dan op deze slide.
 
 Je eigen issues bekijken: vraag het je AI, of open het tabblad Issues van je project op GitHub. Klopt er iets niet? Zeg het je AI.
 
@@ -79,20 +79,18 @@ layout: handson
 
 # Laat je AI eraan werken
 
-Gebruik de nummers die je AI net teruggaf. `1 2 3` is maar een voorbeeld.
+Begin met alleen je eerste twee issues. Zo zie je snel een resultaat. Bij een website staat je site daarna online.
 
-<PromptBlock label="Met jouw nummers">/work-issues 1 2 3</PromptBlock>
+<PromptBlock label="Met jouw nummers">/work-issues 1 2</PromptBlock>
 
-<PromptBlock label="Of laat je AI kiezen">/work-issues Kies de issues waar je nu mee verder kan.</PromptBlock>
-
-<Callout variant="ai" title="Zo zie je dat het gestart is">Je AI zegt: Ik werk aan #1, #2 en #3, en voeg ze daarna samen in één pull request.</Callout>
+<Callout variant="ai" title="Zo zie je dat het gestart is">Je AI zegt dat die aan #1 en #2 werkt, en ze daarna samenvoegt in één pull request.</Callout>
 
 <!--
 2 minuten.
 
-Beide vormen zijn getest. Met nummers kies jij wat er gebeurt. De tweede vorm kijkt welke issues nu kunnen, rekening houdend met wat ervan afhangt. Die neemt er nooit meer dan 10 in één keer.
+Gebruik de nummers die je AI net teruggaf: 1 en 2 zijn een voorbeeld. Twee issues nu, en de rest in een volgende reeks: zo zien jullie sneller iets, en is er minder wachttijd tijdens de uitleg.
 
-Twijfel je? Neem de eerste drie nummers. Die leveren samen al iets op dat je kan bekijken.
+Voor later kan ook een korte opdracht: /work-issues Kies de issues waar je nu mee verder kan. Die vorm is getest en neemt er nooit meer dan 10 in één keer.
 
 Blijft er iets anders open staan, dan stopt /work-issues en vraagt wat er moet gebeuren. Een nieuwe CLAUDE.md of PROJECT_OVERVIEW.md is geen probleem: die slaat het zelf op.
 
@@ -109,7 +107,7 @@ Achterop? Start dit zodra je issues er zijn, ook tijdens het theorieblok. Lukt h
 
 <Callout variant="ai" title="Wacht je AI op jou?">Lees de vraag en antwoord kort. Begrijp je ze niet, vraag dan wat het betekent. Daarna werkt je AI verder.</Callout>
 
-<Callout title="Nog niet zover?">Geen probleem. Werk rustig verder terwijl wij verdergaan. Op het einde bekijken we samen wat er klaar is.</Callout>
+<Callout title="Klaar met deze reeks?">Open de link van je site, en start de volgende reeks: <code>/work-issues 3 4 5</code>. Luister daarna gewoon verder.</Callout>
 
 <!--
 2 minuten.
@@ -118,7 +116,9 @@ Zeg dit duidelijk: we gaan nu door met de theorie, terwijl de AI werkt. Niemand 
 
 /work-issues is gemaakt om zonder tussenkomst te lopen, maar soms vraagt het toch iets. Als niemand kijkt, blijft het daar stilstaan. Vandaar: af en toe even kijken.
 
-In de test duurde /work-issues 1 2 3 4 zo'n 17 minuten, op een snelle machine. Dat is ongeveer de lengte van het volgende theorieblok, dus het zal bij veel deelnemers nog bezig zijn als dat afloopt. Zet je laptop aan het stopcontact, en laat hem niet in slaapstand gaan: dan stopt je AI.
+Nog niet zover? Geen probleem: werk rustig verder terwijl wij verdergaan. Op het einde bekijken we samen wat er klaar is. De nummers 3 4 5 zijn een voorbeeld: gebruik wat je AI noemde.
+
+In de test duurde een reeks van vier issues zo'n 17 minuten op een snelle machine. Een reeks van twee is korter, maar die tijd is nog niet gemeten. Reken erop dat een deel van de groep nog bezig is als het theorieblok afloopt. Zet je laptop aan het stopcontact, en laat hem niet in slaapstand gaan: dan stopt je AI.
 
 Om 1:30 begin je aan het theorieblok, ook als nog niet iedereen gestart is. Help wie vast zit tijdens de uitleg.
 -->

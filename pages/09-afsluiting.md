@@ -10,13 +10,13 @@ eyebrow: Afronden
 
 De slides van dit deel tellen op tot 15 minuten.
 
-Verwacht dat de AI bij een deel van de groep nog bezig is. /work-issues 1 2 3 4 duurde in de test 17 minuten op een snelle machine, en de meesten startten nog geen twintig minuten geleden. Wacht daar niet op: dit deel werkt ook zonder eigen resultaat, want je toont alles op de oefenapp.
+Verwacht dat de AI bij een deel van de groep nog bezig is. Een reeks van vier issues duurde in de test 17 minuten op een snelle machine, en de meesten startten nog geen twintig minuten geleden. Een eerste reeks van twee issues is korter, maar die tijd is nog niet gemeten. Wacht daar niet op: dit deel werkt ook zonder eigen resultaat, want je toont alles op de oefenapp.
 
 Bij wie de AI nog werkt:
 
 - Laten lopen. Niet onderbreken, en geen nieuwe opdracht tussendoor geven.
 - Af en toe kijken of de AI op een antwoord wacht.
-- Meekijken op het scherm. Publiceren doen ze wanneer hun AI klaar is, ook als dat na de workshop is.
+- Meekijken op het scherm. De volgende reeks starten ze wanneer hun AI klaar is, ook als dat na de workshop is.
 - Staat de AI stil bij de pull request? Gebruik de prompt van de slide "Komt je PR niet vooruit?".
 
 Codex: gebruik $create-issues en $work-issues, met dezelfde tekst erachter.
@@ -30,9 +30,10 @@ layout: handson
 
 Is je AI klaar? Dan vertelt die wat er af is, en wat je nu kan doen.
 
-<PromptBlock label="Klaar?">Hoe kan ik mijn app nu zelf bekijken? Start ze voor mij op.</PromptBlock>
+<PromptBlock label="Klaar?">Wat is de link van mijn site? Heb ik geen site, start mijn app dan voor mij op.</PromptBlock>
 
-- Wil je iets aanpassen? Begin een volgende reeks met `/create-issues`
+- Start de volgende reeks: `/work-issues 3 4 5`
+- Wil je iets anders of beters? Begin met `/create-issues`
 
 <Callout variant="ai" title="Nog bezig?">Dat is normaal. Laat je AI werken, kijk af en toe of die op je wacht, en kijk hier mee.</Callout>
 
@@ -45,7 +46,7 @@ Bij wie de AI nog werkt, verandert er niets: laten lopen en meekijken. Help hen 
 
 De prompt op de slide is niet letterlijk getest. Het verslag van /work-issues zegt wel altijd wat je nu kan zien of doen, en daar begin je mee.
 
-De volgende reeks in de oefenapp: de knop om een oefening over te slaan. /create-issues en /work-issues duurden samen ongeveer 6 minuten voor dat ene kleine issue (PR 7). Wie nu al klaar is, kan dit proberen.
+De nummers 3 4 5 zijn een voorbeeld: gebruik wat je AI noemde. Een andere volgende reeks in de oefenapp: de knop om een oefening over te slaan. /create-issues en /work-issues duurden samen ongeveer 6 minuten voor dat ene kleine issue (PR 7). Wie nu al klaar is, kan dit proberen.
 
 Om 1:48 ga je verder.
 -->
@@ -54,32 +55,50 @@ Om 1:48 ga je verder.
 layout: handson
 ---
 
-# Publiceer je website
+# Je website op GitHub Pages
 
-Een statische website zet je gratis op GitHub Pages. [Zo ziet de oefenapp eruit.](https://yvanvds.github.io/workshop-test-breuken/)
+Bij een website zet issue 2 je site online, gratis op GitHub Pages. [Zo ziet de oefenapp eruit.](https://yvanvds.github.io/workshop-test-breuken/)
 
-<PromptBlock label="Vraag het je AI">Publiceer mijn website op GitHub Pages en geef me de link.</PromptBlock>
-
-<PromptBlock label="Of maak er een issue van">/create-issues Publiceer mijn website op GitHub Pages.</PromptBlock>
+<PromptBlock label="Zat dat niet in je issues?">/create-issues Publiceer mijn website op GitHub Pages, met een workflow die de site bouwt en publiceert bij elke push naar main.</PromptBlock>
 
 <Callout variant="warning" title="Iedereen kan die site bekijken">Zet er geen namen, punten of andere gegevens van leerlingen op.</Callout>
 
 <!--
-4 minuten.
+2 minuten.
 
 Open de oefenapp op het scherm: yvanvds.github.io/workshop-test-breuken. Doe één oefening voor. Dit is echt gepubliceerd, en zo kan je de link delen met je leerlingen.
 
-Wat er in de test gebeurde: publiceren was issue 4 van de eerste reeks, gemaakt met /create-issues en afgewerkt met /work-issues. De AI zette GitHub Pages zelf aan, er moest niets aangeklikt worden. Sindsdien gaat de site bij elke merge vanzelf opnieuw online. Dat duurde telkens ongeveer een halve minuut.
-
-Eerlijk vermelden: alleen die weg via een issue is getest. De rechtstreekse vraag is eenvoudiger, maar is niet apart uitgeprobeerd. Met een issue blijft er ook terug te vinden waarom en wanneer het gebeurde. Na de tweede prompt volgt /work-issues met het nummer dat je AI noemt.
-
-Zat publiceren al in je eerste reeks? Dan staat je site er misschien al. Vraag je AI om de link.
+Eerlijk vermelden: in de oefenapp kwam publiceren nog als issue 4. Dat het nu issue 2 is, is ingesteld in de skills en wordt apart getest.
 
 Lukt het niet vanzelf? Dan zegt je AI wat je zelf moet doen, bijvoorbeeld iets aanklikken bij Settings en dan Pages. Op een gratis account moet de repo publiek zijn: dat staat op de slide "Publiek of privaat?".
 
 De waarschuwing over leerlinggegevens herhaal je kort. De uitleg staat op de slide "Code mag openbaar, gegevens niet".
 
-Is je AI nog bezig? Wacht dan tot die klaar is, en geef deze opdracht daarna. Ook thuis kan dat nog.
+Om 1:50 ga je verder.
+-->
+
+---
+
+# Elke merge gaat vanzelf online
+
+Een workflow op `main` bouwt je site opnieuw, en zet die online.
+
+- **Wat:** na elke merge publiceert GitHub de nieuwe versie
+- **Waarom:** je site is altijd gelijk aan je echte app, zonder handwerk
+- **Veilig:** je AI voegt code pas samen na geslaagde controles. Mislukt het publiceren, dan blijft de vorige versie online.
+
+<Callout title="Deze slides werken ook zo">Elke wijziging die wij samenvoegen, staat even later online.</Callout>
+
+<!--
+2 minuten.
+
+Dit is de tweede soort CI. De eerste kennen jullie al: de controle draait op een pull request, vóór de merge, en voert de testen uit. De publicatie draait op main, na de merge. Eerst controleren, dan samenvoegen, dan publiceren.
+
+Waarom dit essentieel is voor een website: zonder workflow moet iemand er na elke wijziging aan denken om opnieuw te publiceren. Dan loopt je site achter op je app, en weet je niet meer welke versie je leerlingen zien.
+
+Een workflow is een bestand in .github/workflows. Je moet het niet zelf schrijven of lezen: je AI maakt het in issue 2.
+
+Een lokale app werkt anders: die publiceer je met een release, zoals op de volgende slide.
 
 Om 1:52 ga je verder.
 -->
