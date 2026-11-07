@@ -26,8 +26,6 @@ Een issue is een goed omschreven taak. Je AI schrijft ze voor jou.
 - Reken op 3 tot 8 issues, in de volgorde waarin ze gemaakt moeten worden
 - Op het einde toont je AI een lijst met nummers en titels
 
-<Callout variant="warning" title="Achterop?">Werk eerst PROJECT_OVERVIEW.md af. Je issues mogen ook tijdens de uitleg ontstaan.</Callout>
-
 <!--
 4 minuten.
 
@@ -44,31 +42,27 @@ layout: handson
 
 # Zo zien issues eruit
 
-Dit maakte `/create-issues` voor de oefenapp. Lees ook één eigen issue.
+Je issues staan op GitHub. Ga ze zelf bekijken.
 
-| Nr | Titel | Label |
-|---|---|---|
-| [1](https://github.com/yvanvds/workshop-test-breuken/issues/1) | Basis van de website klaarzetten | chore |
-| [2](https://github.com/yvanvds/workshop-test-breuken/issues/2) | Breuken vereenvoudigen oefenen | feature |
-| [3](https://github.com/yvanvds/workshop-test-breuken/issues/3) | Breuken optellen oefenen | feature |
-| [4](https://github.com/yvanvds/workshop-test-breuken/issues/4) | Website publiceren op GitHub Pages | chore |
+1. Open je eigen repository op GitHub, en klik op het tabblad **Issues**
+2. Elk issue heeft een duidelijk label, zoals feature of chore. Dat komt van `/bootstrap-github`
+3. Open één issue en lees het helemaal: de inhoud is gedetailleerd
+4. Kies bovenaan tussen **Open** en **Closed**: zo zie je ook de issues die al klaar zijn
 
-<style>
-table {
-  margin-bottom: 20px;
-}
-</style>
-
-<Callout variant="ai" title="Wanneer is issue 2 klaar? Onder andere:">Bij 4/8 telt 1/2 als juist. 2/4 telt als fout, want dat is nog niet volledig vereenvoudigd.</Callout>
+<Callout variant="ai" title="Wat staat er in een issue?">Drie kopjes: Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar?</Callout>
 
 <!--
 2 minuten.
 
-Open issue 2 op GitHub, en toon de kopjes Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar? Die komen uit de sjablonen van /bootstrap-github. Daarvoor was alleen de prompt van de vorige slide nodig, samen met PROJECT_OVERVIEW.md.
+Toon het eerst zelf, bijvoorbeeld bij de demo-app: github.com/yvanvds/calculate-waveforms/issues. Open daar issue 4 (Golven gedurende twee seconden beluisteren), en toon de kopjes Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar? Die komen uit de sjablonen van /bootstrap-github. Daarvoor was alleen de prompt van de vorige slide nodig, samen met PROJECT_OVERVIEW.md. Onder Wanneer is issue 4 klaar? staat onder andere: het geluid start alleen als je op afspelen drukt, en stopt vanzelf na twee seconden.
 
-Het eerste issue zet altijd de basis: het framework, de eerste test en CI. Bij een website is het tweede issue publiceren. Samen leveren ze een eenvoudige pagina op die online staat. In de oefenapp staat publiceren nog op issue 4, omdat die test van vóór deze volgorde is. Bij jullie is issue 2 dus iets anders dan op deze slide.
+Gesloten issues zijn er nu nog niet, of alleen als je AI al iets afgewerkt heeft. Straks, na /work-issues, staan ze onder Closed. Ze verdwijnen dus niet.
 
-Je eigen issues bekijken: vraag het je AI, of open het tabblad Issues van je project op GitHub. Klopt er iets niet? Zeg het je AI.
+De demo-app is met de Codex-versie van de skills gemaakt, dus met $create-issues. De werkwijze is dezelfde als /create-issues.
+
+Het eerste issue zet altijd de basis: het framework, de eerste test en CI. Bij een website is het tweede issue publiceren. Samen leveren ze een eenvoudige pagina op die online staat. Zo staat het ook in de demo-app.
+
+Klopt er iets niet in een issue? Zeg het je AI.
 
 Achterop? Sla het lezen over en ga meteen naar de volgende stap.
 -->
@@ -107,7 +101,7 @@ Achterop? Start dit zodra je issues er zijn, ook tijdens het theorieblok. Lukt h
 
 <Callout variant="ai" title="Wacht je AI op jou?">Lees de vraag en antwoord kort. Begrijp je ze niet, vraag dan wat het betekent. Daarna werkt je AI verder.</Callout>
 
-<Callout title="Klaar met deze reeks?">Open de link van je site, en start de volgende reeks: <code>/work-issues 3 4 5</code>. Luister daarna gewoon verder.</Callout>
+<Callout title="Klaar met deze reeks?">Open de link van je site. Start <code>/work-issues 3 4 5</code> in een nieuwe chat, en luister daarna gewoon verder.</Callout>
 
 <!--
 2 minuten.
@@ -116,7 +110,7 @@ Zeg dit duidelijk: we gaan nu door met de theorie, terwijl de AI werkt. Niemand 
 
 /work-issues is gemaakt om zonder tussenkomst te lopen, maar soms vraagt het toch iets. Als niemand kijkt, blijft het daar stilstaan. Vandaar: af en toe even kijken.
 
-Nog niet zover? Geen probleem: werk rustig verder terwijl wij verdergaan. Op het einde bekijken we samen wat er klaar is. De nummers 3 4 5 zijn een voorbeeld: gebruik wat je AI noemde.
+Nog niet zover? Geen probleem: werk rustig verder terwijl wij verdergaan. Op het einde bekijken we samen wat er klaar is. De nummers 3 4 5 zijn een voorbeeld: gebruik wat je AI noemde. Een nieuwe chat start je in hetzelfde project, zoals bij "Start je AI". Waarom, komt op het einde van het theorieblok.
 
 In de test duurde een reeks van vier issues zo'n 17 minuten op een snelle machine. Een reeks van twee is korter, maar die tijd is nog niet gemeten. Reken erop dat een deel van de groep nog bezig is als het theorieblok afloopt. Zet je laptop aan het stopcontact, en laat hem niet in slaapstand gaan: dan stopt je AI.
 

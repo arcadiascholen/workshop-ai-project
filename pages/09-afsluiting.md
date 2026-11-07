@@ -10,7 +10,7 @@ eyebrow: Afronden
 
 De slides van dit deel tellen op tot 15 minuten.
 
-Verwacht dat de AI bij een deel van de groep nog bezig is. Een reeks van vier issues duurde in de test 17 minuten op een snelle machine, en de meesten startten nog geen twintig minuten geleden. Een eerste reeks van twee issues is korter, maar die tijd is nog niet gemeten. Wacht daar niet op: dit deel werkt ook zonder eigen resultaat, want je toont alles op de oefenapp.
+Verwacht dat de AI bij een deel van de groep nog bezig is. Een reeks van vier issues duurde in de test 17 minuten op een snelle machine, en de meesten startten nog geen twintig minuten geleden. Een eerste reeks van twee issues is korter, maar die tijd is nog niet gemeten. Wacht daar niet op: dit deel werkt ook zonder eigen resultaat, want je toont alles op de demo-app.
 
 Bij wie de AI nog werkt:
 
@@ -32,7 +32,7 @@ Is je AI klaar? Dan vertelt die wat er af is, en wat je nu kan doen.
 
 <PromptBlock label="Klaar?">Wat is de link van mijn site? Heb ik geen site, start mijn app dan voor mij op.</PromptBlock>
 
-- Start de volgende reeks: `/work-issues 3 4 5`
+- Start de volgende reeks in een nieuwe chat: `/work-issues 3 4 5`
 - Wil je iets anders of beters? Begin met `/create-issues`
 
 <Callout variant="ai" title="Nog bezig?">Dat is normaal. Laat je AI werken, kijk af en toe of die op je wacht, en kijk hier mee.</Callout>
@@ -40,13 +40,13 @@ Is je AI klaar? Dan vertelt die wat er af is, en wat je nu kan doen.
 <!--
 3 minuten. Vraag wie al iets kan openen, en laat iemand kort tonen wat die kreeg.
 
-Is nog niemand klaar? Dan is dat geen probleem. Zeg dat het op een gewone laptop langer duurt dan in de test, en ga door naar de oefenapp op de volgende slide.
+Is nog niemand klaar? Dan is dat geen probleem. Zeg dat het op een gewone laptop langer duurt dan in de test, en ga door naar de demo-app op de volgende slide.
 
 Bij wie de AI nog werkt, verandert er niets: laten lopen en meekijken. Help hen nu niet om iets te versnellen. Loop wel even langs wie al lang niet meer gekeken heeft: vaak wacht de AI op een antwoord.
 
 De prompt op de slide is niet letterlijk getest. Het verslag van /work-issues zegt wel altijd wat je nu kan zien of doen, en daar begin je mee.
 
-De nummers 3 4 5 zijn een voorbeeld: gebruik wat je AI noemde. Een andere volgende reeks in de oefenapp: de knop om een oefening over te slaan. /create-issues en /work-issues duurden samen ongeveer 6 minuten voor dat ene kleine issue (PR 7). Wie nu al klaar is, kan dit proberen.
+De nummers 3 4 5 zijn een voorbeeld: gebruik wat je AI noemde. Ideeën voor een volgende reeks staan vaak al onder "Nog niet" in PROJECT_OVERVIEW.md. In de demo-app is dat bijvoorbeeld golven downloaden. Wie nu al klaar is, kan zo een nieuw issue maken met /create-issues.
 
 Om 1:48 ga je verder.
 -->
@@ -57,7 +57,7 @@ layout: handson
 
 # Je website op GitHub Pages
 
-Bij een website zet issue 2 je site online, gratis op GitHub Pages. [Zo ziet de oefenapp eruit.](https://yvanvds.github.io/workshop-test-breuken/)
+Bij een website zet issue 2 je site online, gratis op GitHub Pages. [Zo ziet de demo-app eruit.](https://yvanvds.github.io/calculate-waveforms/)
 
 <PromptBlock label="Zat dat niet in je issues?">/create-issues Publiceer mijn website op GitHub Pages, met een workflow die de site bouwt en publiceert bij elke push naar main.</PromptBlock>
 
@@ -66,9 +66,9 @@ Bij een website zet issue 2 je site online, gratis op GitHub Pages. [Zo ziet de 
 <!--
 2 minuten.
 
-Open de oefenapp op het scherm: yvanvds.github.io/workshop-test-breuken. Doe één oefening voor. Dit is echt gepubliceerd, en zo kan je de link delen met je leerlingen.
+Open de demo-app op het scherm: yvanvds.github.io/calculate-waveforms. Voeg een tweede golf toe, tel de twee op en speel het resultaat af. Dit is echt gepubliceerd, en zo kan je de link delen met je leerlingen.
 
-Eerlijk vermelden: in de oefenapp kwam publiceren nog als issue 4. Dat het nu issue 2 is, is ingesteld in de skills en wordt apart getest.
+Ook in de demo-app was publiceren issue 2, en na de eerste reeks stond de startpagina online.
 
 Lukt het niet vanzelf? Dan zegt je AI wat je zelf moet doen, bijvoorbeeld iets aanklikken bij Settings en dan Pages. Op een gratis account moet de repo publiek zijn: dat staat op de slide "Publiek of privaat?".
 
@@ -145,7 +145,7 @@ De boodschap: technische taal wil niet zeggen dat je iets fout deed. Laat je AI 
 
 Eerste voorbeeld: de testpersoon kreeg onder andere "Quoted text in this command can't be checked before it runs", toen de AI verschillende stappen in één lang commando stak. Claude Code kon dat niet nakijken, en de AI wachtte op een antwoord. De skills zijn daarna aangepast, dus je zal dit minder vaak zien, maar het kan nog. Wat je dan doet, staat op de slide "Je AI vraagt soms toestemming": lees wat er staat, en kies bij twijfel No en vraag wat het doet.
 
-Tweede voorbeeld: de melding staat bij de publicatie van de oefenapp, op het tabblad Actions van de repo. Ze betekent dat een onderdeel van die publicatie verouderd raakt. De publicatie zelf slaagt, en er gaat nu niets door mis. Je hoeft dus niet alles op te lossen wat GitHub meldt. Vraag je AI of het dringend is.
+Tweede voorbeeld: de melding staat bij de publicatie van de demo-app, op het tabblad Actions van de repo. Ze betekent dat een onderdeel van die publicatie verouderd raakt. De publicatie na PR 7 slaagde gewoon, met die melding erbij. Je hoeft dus niet alles op te lossen wat GitHub meldt. Vraag je AI of het dringend is.
 
 Het kader, hooguit een halve minuut. Na npm install kan je een melding krijgen zoals "8 vulnerabilities (3 low, 4 high, 1 critical)", bijvoorbeeld bij een Slidev- of Astro-project. Vulnerabilities zijn kwetsbaarheden: zwakke plekken in code. Vooral "critical" schrikt af. Niet schrikken, wel vragen. Vaak zit het probleem in een onderdeel dat een framework meebrengt, en speelt het alleen in bepaalde situaties.
 
@@ -200,7 +200,7 @@ Om 1:58 ga je verder.
 
 Zo werk je thuis verder: `/create-issues`, en daarna `/work-issues`.
 
-<Callout title="De oefenapp is een voorbeeld">De testrepo workshop-test-breuken hoort niet bij je eigen project. Je hebt ze niet nodig om verder te werken.</Callout>
+<Callout title="Een nieuwe functie?">Praat er eerst over met <code>/discuss</code>. Je AI denkt mee, maar maakt nog geen issues of code.</Callout>
 
 <Callout variant="ai" title="Je AI is nog bezig?">Laat je laptop open tot die klaar is, ook na de workshop.</Callout>
 
@@ -211,7 +211,7 @@ Is er nog een AI aan het werk? Dan gaat die alleen door als de laptop open blijf
 
 Niet iedereen heeft alle drie de punten. Geen issues? /create-issues kan ook thuis. Geen overzicht? Start thuis /setup.
 
-De testrepo is alleen om te bekijken hoe het eruitziet. Laat niemand ze klonen of erin verder werken.
+/discuss kwam kort aan bod bij de skills. Je AI leest je project en zoekt op het internet, maar past niets aan. Ben je uitgepraat, dan maak je er issues van met /create-issues, en daarna /work-issues. In Codex typ je $discuss.
 
 Bedank iedereen. Einde om 2:00.
 -->

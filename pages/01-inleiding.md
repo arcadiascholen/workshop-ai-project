@@ -53,14 +53,16 @@ Er is geen vaste pauze: we zien wel wanneer we op de AI moeten wachten.
 - Hou het klein: wat is het kleinste dat al nuttig is?
 - Nog geen idee? Denk aan iets dat je nu veel tijd kost, in de les of bij het voorbereiden.
 
-<Callout title="Een voorbeeld">Deze oefenapp voor breuken kwam uit een test van deze workshop: <a href="https://yvanvds.github.io/workshop-test-breuken/" target="_blank">yvanvds.github.io/workshop-test-breuken</a></Callout>
+<Callout title="Een voorbeeld">Deze demo-app over geluidsgolven, voor fysica, is gemaakt zoals in deze workshop: <a href="https://yvanvds.github.io/calculate-waveforms/" target="_blank">yvanvds.github.io/calculate-waveforms</a></Callout>
 
 <!--
 2 minuten.
 
 Laat een paar mensen hun idee in één zin vertellen. Ga er nog niet op in: we werken de ideeën uit met /setup.
 
-Open eventueel de oefenapp en toon hoe je een oefening maakt. Zo zien ze waar het naartoe gaat.
+Open eventueel de demo-app en toon hoe je een golf toevoegt en beluistert. Zo zien ze waar het naartoe gaat.
+
+De demo-app is gemaakt met de Codex-versie van de skills ($setup, $create-issues, $work-issues). De stappen zijn dezelfde als vandaag.
 
 Wie nog geen idee heeft, hoeft zich geen zorgen te maken: /setup helpt daarbij.
 -->
