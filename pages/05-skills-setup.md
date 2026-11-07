@@ -8,7 +8,7 @@ eyebrow: Zelf doen
 <!--
 0:55, 20 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
 
-De slides in dit bestand tellen op tot 18 minuten. De andere 2 minuten zijn voor de slides over toestemmingsvragen (#16) en het design system (#6). Zolang die er niet staan, is dat extra marge bij /setup.
+De slides in dit bestand tellen op tot 19 minuten. De laatste minuut is voor de slide over het design system (#6). Zolang die er niet staat, is dat extra marge bij /setup.
 
 Codex: je start een skill met $ in plaats van /, dus $setup. De stappen lopen gelijk. Zie docs/CODEX.md in de template.
 -->
@@ -42,6 +42,38 @@ Kort houden. Het enige wat ze moeten onthouden: je typt /naam, en je AI volgt ee
 De skills staan in de map .claude/skills van je project. Er zijn er nog meer: /work-issue en /cleanup roept /work-issues zelf op, en met /discuss overleg je met je AI zonder dat die iets aanpast.
 
 /init, dat we straks gebruiken, is geen skill van de template. Dat zit standaard in Claude Code.
+-->
+
+---
+
+# Je AI vraagt soms toestemming
+
+Dat is normaal, en geen fout. Je AI kan niet zomaar om het even welk programma uitvoeren: soms moet jij eerst akkoord geven.
+
+- **Gewone stappen** mogen zonder vragen, zo valt `/work-issues` niet stil
+- **Gevaarlijke dingen** zijn geblokkeerd, zoals je repo verwijderen
+- **Al de rest** vraagt je AI eerst aan jou. Kijk dus af en toe of je AI op je wacht.
+
+<Callout title="Krijg je een vraag met Yes en No?">Lees wat er staat. Twijfel je? Kies No en vraag wat het doet en waarom.</Callout>
+
+<!--
+1 minuut. Zeg dit voor iedereen aan /setup begint, dan schrikt niemand van de eerste vraag.
+
+De boodschap is geruststellend: een toestemmingsvraag is een veiligheidsmaatregel en geen fout. Er is niets misgelopen.
+
+Wat de template precies toelaat, staat in .claude/settings.json en in de README:
+
+- Mag zonder vragen: bestanden in je project aanpassen, de gewone Git- en GitHub-commando's, en de commando's om je app te installeren, te bouwen en te testen.
+- Mag nooit: de geschiedenis op GitHub overschrijven, niet-opgeslagen werk weggooien of je repo verwijderen.
+- Al de rest: je AI vraagt het eerst. Een tool op je laptop installeren, zoals met winget, hoort daarbij.
+
+Dit is de lijst waarvoor Claude Code waarschuwde bij de vertrouwensvraag, op de slide "Open je project". Die vraag zelf herhaal je niet.
+
+Zeg dus niet: druk altijd op Yes. Kies je No, dan gebeurt het niet. Je AI wacht dan op wat je zegt, en je kan gewoon vragen wat het commando doet. Dat hebben we nagekeken in Claude Code 2.1.319. Daar staan ook opties als "don't ask again" en "switch to auto mode" tussen. Die heb je vandaag niet nodig.
+
+Af en toe kijken of je AI wacht, komt terug op de slide "Je AI werkt verder, jij luistert".
+
+Codex: dit werkt anders, met een automatische beoordelaar. Zie "Hoe de toestemmingen werken" in docs/CODEX.md van de template.
 -->
 
 ---
@@ -102,7 +134,7 @@ Moet de terminal na een installatie opnieuw starten? Je AI legt uit hoe. Typ daa
 
 Nog niet aangemeld bij GitHub? /setup kijkt dat na, en vraagt je om in de prompt ! gh auth login te typen.
 
-Tijdslimiet: om 1:10 ga je verder. Wie dan nog bezig is, gebruikt de prompt "Achterop?" en werkt verder tijdens de volgende slides.
+Tijdslimiet: om 1:11 ga je verder. Wie dan nog bezig is, gebruikt de prompt "Achterop?" en werkt verder tijdens de volgende slides.
 -->
 
 ---
@@ -148,5 +180,5 @@ Je AI zet het document meteen op GitHub, en noemt daarna de volgende stappen: /b
 
 Later aanpassen kan altijd: vraag het gewoon aan je AI.
 
-Achterop? Geen overzicht om 1:13? Laat je AI verder werken, en doe de volgende stappen mee zodra het document er is.
+Achterop? Geen overzicht om 1:14? Laat je AI verder werken, en doe de volgende stappen mee zodra het document er is.
 -->
