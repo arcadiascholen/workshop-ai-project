@@ -6,5 +6,183 @@ eyebrow: Afronden
 # Resultaat, publiceren en afsluiting
 
 <!--
-1:45, 15 minuten.
+1:45, 15 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
+
+De slides van dit deel tellen op tot 15 minuten.
+
+Verwacht dat de AI bij een deel van de groep nog bezig is. /work-issues 1 2 3 4 duurde in de test 17 minuten op een snelle machine, en de meesten startten nog geen twintig minuten geleden. Wacht daar niet op: dit deel werkt ook zonder eigen resultaat, want je toont alles op de oefenapp.
+
+Bij wie de AI nog werkt:
+
+- Laten lopen. Niet onderbreken, en geen nieuwe opdracht tussendoor geven.
+- Af en toe kijken of de AI op een antwoord wacht.
+- Meekijken op het scherm. Publiceren doen ze wanneer hun AI klaar is, ook als dat na de workshop is.
+- Staat de AI stil bij de pull request? Gebruik de prompt van de slide "Komt je PR niet vooruit?".
+
+Codex: gebruik $create-issues en $work-issues, met dezelfde tekst erachter.
+-->
+
+---
+layout: handson
+---
+
+# Bekijk je resultaat
+
+Is je AI klaar? Dan vertelt die wat er af is, en wat je nu kan doen.
+
+<PromptBlock label="Klaar?">Hoe kan ik mijn app nu zelf bekijken? Start ze voor mij op.</PromptBlock>
+
+- Wil je iets aanpassen? Begin een volgende reeks met `/create-issues`
+
+<Callout variant="ai" title="Nog bezig?">Dat is normaal. Laat je AI werken, kijk af en toe of die op je wacht, en kijk hier mee.</Callout>
+
+<!--
+3 minuten. Vraag wie al iets kan openen, en laat iemand kort tonen wat die kreeg.
+
+Is nog niemand klaar? Dan is dat geen probleem. Zeg dat het op een gewone laptop langer duurt dan in de test, en ga door naar de oefenapp op de volgende slide.
+
+Bij wie de AI nog werkt, verandert er niets: laten lopen en meekijken. Help hen nu niet om iets te versnellen. Loop wel even langs wie al lang niet meer gekeken heeft: vaak wacht de AI op een antwoord.
+
+De prompt op de slide is niet letterlijk getest. Het verslag van /work-issues zegt wel altijd wat je nu kan zien of doen, en daar begin je mee.
+
+De volgende reeks in de oefenapp: de knop om een oefening over te slaan. /create-issues en /work-issues duurden samen ongeveer 6 minuten voor dat ene kleine issue (PR 7). Wie nu al klaar is, kan dit proberen.
+
+Om 1:48 ga je verder.
+-->
+
+---
+layout: handson
+---
+
+# Publiceer je website
+
+Een statische website zet je gratis op GitHub Pages. [Zo ziet de oefenapp eruit.](https://yvanvds.github.io/workshop-test-breuken/)
+
+<PromptBlock label="Vraag het je AI">Publiceer mijn website op GitHub Pages en geef me de link.</PromptBlock>
+
+<PromptBlock label="Of maak er een issue van">/create-issues Publiceer mijn website op GitHub Pages.</PromptBlock>
+
+<Callout variant="warning" title="Iedereen kan die site bekijken">Zet er geen namen, punten of andere gegevens van leerlingen op.</Callout>
+
+<!--
+4 minuten.
+
+Open de oefenapp op het scherm: yvanvds.github.io/workshop-test-breuken. Doe één oefening voor. Dit is echt gepubliceerd, en zo kan je de link delen met je leerlingen.
+
+Wat er in de test gebeurde: publiceren was issue 4 van de eerste reeks, gemaakt met /create-issues en afgewerkt met /work-issues. De AI zette GitHub Pages zelf aan, er moest niets aangeklikt worden. Sindsdien gaat de site bij elke merge vanzelf opnieuw online. Dat duurde telkens ongeveer een halve minuut.
+
+Eerlijk vermelden: alleen die weg via een issue is getest. De rechtstreekse vraag is eenvoudiger, maar is niet apart uitgeprobeerd. Met een issue blijft er ook terug te vinden waarom en wanneer het gebeurde. Na de tweede prompt volgt /work-issues met het nummer dat je AI noemt.
+
+Zat publiceren al in je eerste reeks? Dan staat je site er misschien al. Vraag je AI om de link.
+
+Lukt het niet vanzelf? Dan zegt je AI wat je zelf moet doen, bijvoorbeeld iets aanklikken bij Settings en dan Pages. Op een gratis account moet de repo publiek zijn: dat staat op de slide "Publiek of privaat?".
+
+De waarschuwing over leerlinggegevens herhaal je kort. De uitleg staat op de slide "Code mag openbaar, gegevens niet".
+
+Is je AI nog bezig? Wacht dan tot die klaar is, en geef deze opdracht daarna. Ook thuis kan dat nog.
+
+Om 1:52 ga je verder.
+-->
+
+---
+
+# Een Windows-app? Vraag om een release
+
+Een release is een versie op GitHub die anderen kunnen downloaden.
+
+<PromptBlock label="Windows-app">Maak een release van mijn Windows-app op GitHub, zodat anderen ze kunnen downloaden.</PromptBlock>
+
+<Callout variant="warning" title="Dit is nog niet uitgeprobeerd">Verloopt het anders? Blijf praten met je AI, en vraag wat je moet doen.</Callout>
+
+<!--
+1 minuut. Kort houden: de meesten maken vandaag een website.
+
+Deze weg is niet getest in deze workshop, en de prompt dus ook niet. Beloof niet hoe het zal lopen of hoe lang het duurt. Zeg dat er duidelijk bij.
+
+De waarschuwing van Windows bij onbekende software kwam al aan bod bij de platformen. Niet opnieuw uitleggen.
+
+Ook een release in een publieke repo kan iedereen downloaden. Leerlinggegevens horen er dus ook hier niet in.
+
+Om 1:53 ga je verder.
+-->
+
+---
+
+# Wat kan er misgaan?
+
+Er gaat regelmatig iets mis. Dat is geen probleem: praat verder met je AI.
+
+- **Een toestemmingsvraag met een technische waarschuwing:** in de test was er niets stuk
+- **GitHub meldt `Node.js 20 is deprecated`:** niet dringend, de site stond gewoon online
+
+<PromptBlock label="Begrijp je een melding niet?">Wat betekent deze melding? Moet ik iets doen? [plak de melding]</PromptBlock>
+
+<!--
+3 minuten, waarvan ongeveer 2 om te vertellen. De laatste minuut is speling.
+
+De boodschap: technische taal wil niet zeggen dat je iets fout deed. Laat je AI uitleggen wat er aan de hand is.
+
+Eerste voorbeeld: de testpersoon kreeg onder andere "Quoted text in this command can't be checked before it runs", toen de AI verschillende stappen in één lang commando stak. Claude Code kon dat niet nakijken, en de AI wachtte op een antwoord. De skills zijn daarna aangepast, dus je zal dit minder vaak zien, maar het kan nog. Wat je dan doet, staat op de slide "Je AI vraagt soms toestemming": lees wat er staat, en kies bij twijfel No en vraag wat het doet.
+
+Tweede voorbeeld: de melding staat bij de publicatie van de oefenapp, op het tabblad Actions van de repo. Ze betekent dat een onderdeel van die publicatie verouderd raakt. De publicatie zelf slaagt, en er gaat nu niets door mis. Je hoeft dus niet alles op te lossen wat GitHub meldt. Vraag je AI of het dringend is.
+
+Eerlijk vermelden: een gefaalde controle is in de test niet voorgekomen. De Windows-test moet nog gebeuren, dus daar kunnen nog andere voorbeelden uit komen.
+
+Om 1:56 ga je verder.
+-->
+
+---
+
+# Begrijp je een voorstel niet helemaal?
+
+Vaak wordt pas duidelijk wat je AI bedoelt als je het resultaat ziet.
+
+| Je AI vraagt of stelt voor | Wat doe je? |
+|---|---|
+| Een voorstel voor je app, zoals een opbouw of een knop | **Ga akkoord** en bekijk het resultaat. Niet wat je wou? Maak een issue om het aan te passen. |
+| Iets dat je niet kan terugdraaien, of dat gegevens deelt | **Vraag eerst** wat het doet. |
+| Een toestemmingsvraag met Yes en No | Lees wat er staat. Twijfel je? **Kies No** en vraag wat het doet. |
+
+<style>
+table {
+  margin-bottom: 20px;
+}
+</style>
+
+<!--
+2 minuten.
+
+Zeg dit: blijf niet hangen op elk voorstel. Je hoeft niet alles vooraf te begrijpen. Het werk zit in een branch en kan achteraf nog veranderen. Dat maakt akkoord gaan bij een voorstel voor je app veilig.
+
+Dat geldt niet voor alles. Iets publiceren met gegevens erin of gegevens naar een andere dienst sturen, draai je niet zomaar terug. Vraag dan eerst wat het doet en wie het kan zien.
+
+Dit klopt met de slide "Je AI vraagt soms toestemming". Die uitleg herhaal je niet. Zeg dus niet: ga altijd akkoord.
+
+Om 1:58 ga je verder.
+-->
+
+---
+
+# Dit neem je mee naar huis
+
+- **Je eigen project** op GitHub
+- **Een ontwerpdocument:** `PROJECT_OVERVIEW.md`
+- **Een eerste lijst taken:** je issues
+
+Zo werk je thuis verder: `/create-issues`, en daarna `/work-issues`.
+
+<Callout title="De oefenapp is een voorbeeld">De testrepo workshop-test-breuken hoort niet bij je eigen project. Je hebt ze niet nodig om verder te werken.</Callout>
+
+<Callout variant="ai" title="Je AI is nog bezig?">Laat je laptop open tot die klaar is, ook na de workshop.</Callout>
+
+<!--
+2 minuten. Sluit af met wat ze nu hebben, zoals de omschrijving van de workshop beloofde. Thuis open je je AI in de map van je project, zoals vandaag.
+
+Is er nog een AI aan het werk? Dan gaat die alleen door als de laptop open blijft en niet in slaapstand gaat. Het werk staat pas op GitHub na de push op het einde van de reeks. Moet iemand toch weg en stopt de AI? Open je project thuis met je AI, en vraag wat er al klaar is en of die de rest kan afwerken. Dat is niet getest. De issues staan wel veilig op GitHub.
+
+Niet iedereen heeft alle drie de punten. Geen issues? /create-issues kan ook thuis. Geen overzicht? Start thuis /setup.
+
+De testrepo is alleen om te bekijken hoe het eruitziet. Laat niemand ze klonen of erin verder werken.
+
+Bedank iedereen. Einde om 2:00.
 -->
