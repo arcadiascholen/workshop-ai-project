@@ -117,14 +117,24 @@ Er gaat regelmatig iets mis. Dat is geen probleem: praat verder met je AI.
 
 <PromptBlock label="Begrijp je een melding niet?">Wat betekent deze melding? Moet ik iets doen? [plak de melding]</PromptBlock>
 
+<Callout variant="warning" title="npm meldt 8 vulnerabilities, waarvan 1 critical?">Je app of laptop is daarmee niet gehackt. Vraag het je AI, en zeg erbij: pas nog niets aan. Voer <code>npm audit fix --force</code> niet zomaar uit: dat kan je project stukmaken.</Callout>
+
 <!--
-3 minuten, waarvan ongeveer 2 om te vertellen. De laatste minuut is speling.
+3 minuten, waarvan ongeveer 2,5 om te vertellen. De laatste halve minuut is speling.
 
 De boodschap: technische taal wil niet zeggen dat je iets fout deed. Laat je AI uitleggen wat er aan de hand is.
 
 Eerste voorbeeld: de testpersoon kreeg onder andere "Quoted text in this command can't be checked before it runs", toen de AI verschillende stappen in één lang commando stak. Claude Code kon dat niet nakijken, en de AI wachtte op een antwoord. De skills zijn daarna aangepast, dus je zal dit minder vaak zien, maar het kan nog. Wat je dan doet, staat op de slide "Je AI vraagt soms toestemming": lees wat er staat, en kies bij twijfel No en vraag wat het doet.
 
 Tweede voorbeeld: de melding staat bij de publicatie van de oefenapp, op het tabblad Actions van de repo. Ze betekent dat een onderdeel van die publicatie verouderd raakt. De publicatie zelf slaagt, en er gaat nu niets door mis. Je hoeft dus niet alles op te lossen wat GitHub meldt. Vraag je AI of het dringend is.
+
+Het kader, hooguit een halve minuut. Na npm install kan je een melding krijgen zoals "8 vulnerabilities (3 low, 4 high, 1 critical)", bijvoorbeeld bij een Slidev- of Astro-project. Vulnerabilities zijn kwetsbaarheden: zwakke plekken in code. Vooral "critical" schrikt af. Niet schrikken, wel vragen. Vaak zit het probleem in een onderdeel dat een framework meebrengt, en speelt het alleen in bepaalde situaties.
+
+Wie zo'n melding krijgt, kan dit aan de AI vragen: "npm meldt kwetsbaarheden. Leg uit wat dit betekent voor mijn project, en stel voor wat we moeten doen. Pas nog niets aan." Wil je het laten oplossen, dan maak je er een issue van met /create-issues.
+
+Voorbeeld: deze slides zelf. npm audit meldt bij Slidev 53.1.0 die 8 kwetsbaarheden (nagekeken op 7 november 2026). Ze komen van dompurify, via de code-editor monaco-editor, en van image-size, via de PowerPoint-export pptxgenjs. npm audit fix --force zou Slidev terugzetten naar 53.0.0, en andere versies van je frameworks kunnen je project stukmaken.
+
+Gaat het om leerlinggegevens of een site met login? Dan vraagt zo'n melding meer aandacht. Geen volledige uitleg over beveiliging hier.
 
 Eerlijk vermelden: een gefaalde controle is in de test niet voorgekomen. De Windows-test moet nog gebeuren, dus daar kunnen nog andere voorbeelden uit komen.
 
