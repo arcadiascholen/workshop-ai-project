@@ -40,12 +40,12 @@ Korte herhaling, zodat de woorden repo en klonen een betekenis krijgen. Je hoeft
 
 <Callout variant="ai" title="Dit heeft je AI later nodig">Issues en PR's blijven bewaard. Zo vindt je AI later terug waarom iets op een bepaalde manier gedaan is.</Callout>
 
-Voorbeeld uit de test: [issue 1](https://github.com/yvanvds/workshop-test-breuken/issues/1), [PR 5](https://github.com/yvanvds/workshop-test-breuken/pull/5), [PR 10](https://github.com/yvanvds/workshop-test-breuken/pull/10)
+Voorbeeld uit de demo-app: [issue 1](https://github.com/yvanvds/calculate-waveforms/issues/1), [PR 7](https://github.com/yvanvds/calculate-waveforms/pull/7), [PR 8](https://github.com/yvanvds/calculate-waveforms/pull/8)
 
 <!--
 3 minuten.
 
-Open issue 1 en PR 5 van de oefenapp als voorbeeld. Toon alleen dat er duidelijk staat wat er moet gebeuren en wat er veranderde. De technische woorden hoeven ze niet te begrijpen. PR 10 toont waarom bepaalde keuzes gemaakt zijn.
+Open issue 1 en PR 7 van de demo-app als voorbeeld. Toon alleen dat er duidelijk staat wat er moet gebeuren en wat er veranderde. De technische woorden hoeven ze niet te begrijpen. PR 8 toont waarom bepaalde keuzes gemaakt zijn, bijvoorbeeld hoe het geluid begrensd wordt.
 
 CI staat voor continuous integration. Eén zin volstaat: CI voert de testen uit. Waarom je testen nodig hebt, komt straks in het theorieblok.
 

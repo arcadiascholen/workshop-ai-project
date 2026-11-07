@@ -17,7 +17,7 @@ Begin ook als nog niet iedereen gestart is. Help wie vast zit tijdens de uitleg.
 
 # We volgen één issue
 
-Issue 3 uit de oefenapp: [Breuken optellen oefenen](https://github.com/yvanvds/workshop-test-breuken/issues/3). Je AI doet nu hetzelfde.
+Issue 3 uit de demo-app: [Sinusgolven toevoegen en interactief visualiseren](https://github.com/yvanvds/calculate-waveforms/issues/3). Je AI doet nu hetzelfde.
 
 <ol class="flow">
   <li>Issue</li>
@@ -70,7 +70,7 @@ Issue 3 uit de oefenapp: [Breuken optellen oefenen](https://github.com/yvanvds/w
 <!--
 1 minuut.
 
-Zeg: dit is wat er op dit moment op jullie laptop gebeurt. We volgen één issue van de oefenapp, van begin tot einde.
+Zeg: dit is wat er op dit moment op jullie laptop gebeurt. We volgen één issue van de demo-app, van begin tot einde.
 
 Een herinnering: kijk af en toe of je AI op je wacht. Dat staat op de slide "Je AI werkt verder, jij luistert".
 
@@ -97,16 +97,16 @@ td:first-child {
 }
 </style>
 
-<Callout variant="ai" title="Uit issue 3: wanneer is dit klaar? Onder andere:">Bij 1/4 + 1/4 telt 1/2 als juist. 2/4 telt als fout, want het antwoord moet vereenvoudigd zijn.</Callout>
+<Callout variant="ai" title="Uit issue 3: wanneer is dit klaar? Onder andere:">Toevoegen maakt W2, W3 enzovoort, zonder bestaande golven te overschrijven. Een andere frequentie past de grafiek meteen aan.</Callout>
 
 <!--
 2 minuten.
 
-Open issue 3: github.com/yvanvds/workshop-test-breuken/issues/3. Toon de kopjes, en vooral de lijst onder "Wanneer is dit klaar?". Die punten kan je AI één voor één controleren, ook met een test.
+Open issue 3: github.com/yvanvds/calculate-waveforms/issues/3. Toon de kopjes, en vooral de lijst onder "Wanneer is dit klaar?". Die punten kan je AI één voor één controleren, ook met een test.
 
 Waarom houdt dit je AI op koers? Tijdens het werk leest die opnieuw wat het doel is. Wat niet in het issue hoort, wordt een nieuw issue, en komt niet zomaar in het huidige werk terecht.
 
-Die vaste structuur komt van de sjablonen van /bootstrap-github, die je daarnet klaarzette. Schrijven doet /create-issues. Issue 3 vermeldt zelfs wat er bewust nog niet in komt: aftrekken, vermenigvuldigen en delen.
+Die vaste structuur komt van de sjablonen van /bootstrap-github, die je daarnet klaarzette. Schrijven doet /create-issues. Issue 3 vermeldt zelfs wat er bewust nog niet in komt: andere golven dan sinusgolven, opslag en downloaden.
 -->
 
 ---
@@ -128,7 +128,7 @@ Je AI werkt in een vertakking van je code. Je echte app blijft ongemoeid.
 - Loopt het helemaal mis? Verwijder de branch en begin opnieuw.
 - Ook goed voor grote uitbreidingen op lange termijn: vind je intussen een fout, dan kan je de echte app nog altijd aanpassen.
 
-<Callout variant="ai" title="In de oefenapp">/work-issues maakte één branch voor de hele reeks: issues-1-4.</Callout>
+<Callout variant="ai" title="In de demo-app">Eén branch voor de hele reeks: codex/issues-3-6.</Callout>
 
 <style>
 .takken {
@@ -172,7 +172,7 @@ Loopt het helemaal mis, dan vraag je je AI om de branch te verwijderen en opnieu
 
 Grote uitbreidingen: je kan weken in een branch werken aan iets nieuws. Vind je ondertussen een fout in je app, dan los je die op in de echte app, zonder dat al je nieuwe code in de weg zit.
 
-/work-issues maakt één branch voor de hele reeks. Bij één issue heet die zo: issue-6, uit PR 7.
+/work-issues maakt één branch voor de hele reeks. Het voorvoegsel codex/ komt van Codex, waarmee de demo-app gemaakt is.
 -->
 
 ---
@@ -215,7 +215,7 @@ table {
 - Je app verandert nog niet: alles zit in de branch
 - `/work-issues` maakt een commit per issue, en pusht op het einde alles samen
 
-<Callout variant="ai" title="Issue 3 werd één commit">Breuken optellen oefenen (#3). Het nummer koppelt de commit aan het issue.</Callout>
+<Callout variant="ai" title="Issue 3 werd één commit">Voeg interactieve sinusgolven toe (#3). Het nummer koppelt de commit aan het issue.</Callout>
 
 <!--
 2 minuten.
@@ -224,13 +224,13 @@ Na een commit staat het werk nog alleen op je laptop. Pas de push zet het op Git
 
 De agent commit pas als de testen op je laptop slagen. Is de laatste agent klaar, dan volgt de push.
 
-Oefenapp, issues 1 tot 4: vier issues, vier commits, één push.
-- Basis van de website klaarzetten (#1)
-- Breuken vereenvoudigen oefenen (#2)
-- Breuken optellen oefenen (#3)
-- Website publiceren op GitHub Pages (#4)
+Demo-app, issues 3 tot 6: vier issues, vier commits, één push.
+- Voeg interactieve sinusgolven toe (#3)
+- Golven twee seconden afspelen (#4)
+- Golven vermenigvuldigen en optellen (#5)
+- Voeg envelopes en ADSR toe (#6)
 
-Toon ze eventueel op het tabblad Commits van PR 5.
+Toon ze eventueel op het tabblad Commits van PR 8.
 -->
 
 ---
@@ -242,22 +242,22 @@ Eén PR bundelt het werk van de hele reeks.
 - **Extra controle:** CI voert de testen uit op GitHub, dus niet alleen op je laptop
 - **Geschiedenis:** wat er veranderde en waarom. Je AI kan dat later altijd terugzoeken.
 
-<Callout variant="ai" title="PR 5 van de oefenapp">Issues 1 tot 4 samen, met de keuzes en de testresultaten. De controle op GitHub slaagde na 48 seconden.</Callout>
+<Callout variant="ai" title="PR 8 van de demo-app">Issues 3 tot 6 samen, met de keuzes en de testresultaten. De controle op GitHub slaagde na bijna drie minuten.</Callout>
 
-Bekijk: [PR 5](https://github.com/yvanvds/workshop-test-breuken/pull/5) (vier issues), [PR 7](https://github.com/yvanvds/workshop-test-breuken/pull/7) (één klein issue)
+Bekijk: [PR 7](https://github.com/yvanvds/calculate-waveforms/pull/7) (issues 1 en 2), [PR 8](https://github.com/yvanvds/calculate-waveforms/pull/8) (issues 3 tot 6)
 
 <!--
 2 minuten.
 
 Wat CI is, weten ze al: CI voert de testen uit. Niet opnieuw uitleggen.
 
-Open PR 5: github.com/yvanvds/workshop-test-breuken/pull/5. Toon de beschrijving: wat er veranderd is, de beslissingen, de testresultaten en wat er niet gedaan is. Toon op het tabblad Checks de geslaagde controle met de naam controle.
+Open PR 8: github.com/yvanvds/calculate-waveforms/pull/8. Toon de beschrijving: wat er veranderd is, de beslissingen en de testresultaten. Toon op het tabblad Checks de geslaagde controle met de naam flutter. De tweede, publish, is overgeslagen: die publiceert pas na de merge.
 
 Een controle op GitHub geeft meer zekerheid dat je app niet alleen op je eigen laptop werkt.
 
-Later kan je AI in afgesloten issues en PR's terugvinden waarom iets zo gemaakt is. In PR 5 staat bijvoorbeeld dat ook omgewisselde sommen als dezelfde oefening tellen.
+Later kan je AI in afgesloten issues en PR's terugvinden waarom iets zo gemaakt is. In PR 8 staat bijvoorbeeld dat het geluid een vaste versterking en begrenzing krijgt, zodat verschillen tussen golven hoorbaar blijven.
 
-PR 7 toont dezelfde flow voor één klein issue: branch issue-6, één commit, en de controle slaagde.
+PR 7 toont dezelfde flow voor de eerste reeks: issues 1 en 2, twee commits, en de controle slaagde.
 -->
 
 ---
@@ -292,7 +292,7 @@ Alle controles geslaagd? Dan voegt je AI de code van de branch toe aan de hoofdb
 - Pas nu verandert je app
 - Bij een website gaat je site daarna vanzelf online
 
-<Callout variant="ai" title="In PR 5">19 seconden na de geslaagde controle voegde de AI alles samen.</Callout>
+<Callout variant="ai" title="In PR 8">Iets meer dan een minuut na de geslaagde controle voegde de AI alles samen.</Callout>
 
 <Callout title="Lukt de merge niet?">Je AI stopt en legt uit wat er aan de hand is, bijvoorbeeld bij een conflict.</Callout>
 
@@ -316,7 +316,7 @@ Bij een website start de merge ook de publicatie. Wat dat is en waarom het belan
 - De issues zijn gesloten
 - Je AI staat terug op de hoofdbranch, klaar voor de volgende reeks
 
-<Callout variant="ai" title="Niets gaat verloren">Issue 3 en PR 5 blijven op GitHub staan. Alleen de branch issues-1-4 is weg, 11 seconden na de merge.</Callout>
+<Callout variant="ai" title="Niets gaat verloren">Issue 3 en PR 8 blijven op GitHub staan. Alleen de branch codex/issues-3-6 is weg, 19 seconden na de merge.</Callout>
 
 <!--
 1 minuut.
@@ -343,7 +343,7 @@ Dit lijkt veel, maar twee skills volstaan.
 
 Dit is de boodschap om mee te nemen. /create-issues zoekt zelf uit wat er echt aan de hand is en maakt een of meer issues. /work-issues doet alle stappen die je net zag. Een korte opdracht mag ook, zoals: Kies de issues waar je nu mee verder kan. Het neemt nooit meer dan 10 issues in één keer.
 
-In de test duurde een reeks van vier issues zo'n 17 minuten op een snelle machine, inclusief CI, merge, cleanup en publicatie. /create-issues en /work-issues voor één klein issue duurden samen ongeveer 6 minuten. Bij jullie kan dat langer duren, dus het is normaal als je AI nog bezig is.
+In de test duurde een reeks van vier issues zo'n 17 minuten op een snelle machine, inclusief CI, merge, cleanup en publicatie. Bij jullie kan dat langer duren, dus het is normaal als je AI nog bezig is.
 
 Om 1:45 ga je verder, ook als niet iedereen klaar is.
 -->

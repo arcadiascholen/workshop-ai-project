@@ -141,15 +141,15 @@ layout: handson
 
 # Je hebt nu `PROJECT_OVERVIEW.md`
 
-Dit is je ontwerpdocument. Een voorbeeld uit de oefenapp:
+Dit is je ontwerpdocument. Een voorbeeld uit de demo-app:
 
 | | |
 |---|---|
-| **Eerste versie** | Vereenvoudigen of optellen, en meteen zien of het antwoord juist is |
-| **Nog niet** | Aanmelden, punten bijhouden, moeilijkheidsgraden |
-| **Frameworks** | Astro: past bij een statische website, gratis op GitHub Pages |
-| **Opslag** | Niets bewaren: voor losse oefeningen is dat niet nodig |
-| **Testen** | De app mag nooit een fout antwoord als juist tonen |
+| **Eerste versie** | Sinusgolven bekijken en beluisteren, vermenigvuldigen, optellen en een volumeverloop geven |
+| **Nog niet** | Andere golfvormen, downloaden, projecten bewaren |
+| **Frameworks** | Flutter: later kan er ook een installeerbare app van komen |
+| **Opslag** | Niets bewaren: na opnieuw laden begin je opnieuw |
+| **Testen** | Grafiek en geluid komen uit dezelfde berekende golf |
 
 <style>
 table {
@@ -170,7 +170,7 @@ td:first-child {
 
 Je AI gebruikt dit document bij alles wat volgt.
 
-Open het volledige voorbeeld: github.com/yvanvds/workshop-test-breuken/blob/main/PROJECT_OVERVIEW.md. De tekst op de slide is ingekort. Toon vooral "Nog niet" en "Testen", want daar denk je zonder /setup niet aan. Vermeld ook dat elke keuze een reden heeft: zo weet een latere AI-sessie waarom het zo gekozen is.
+Open het volledige voorbeeld: github.com/yvanvds/calculate-waveforms/blob/main/PROJECT_OVERVIEW.md. De tekst op de slide is ingekort. Toon vooral "Nog niet" en "Testen", want daar denk je zonder /setup niet aan. Vermeld ook dat elke keuze een reden heeft: zo weet een latere AI-sessie waarom het zo gekozen is.
 
 Laat iedereen de eigen samenvatting nalezen.
 
@@ -200,5 +200,5 @@ Waarom het erin zit: /setup heeft het net vermeld, en sommigen zullen vragen of 
 
 /create-issues en /work-issues doen we straks samen. Thuis ken je ze dus al.
 
-Getest op een kopie van de oefenapp, met dezelfde opdracht maar zonder /create-issues: je AI verving de kleuren en lettertypes in design-system/ en paste de app aan. De app bouwt en de gewone tests slagen. Het Arcadia-logo bleef staan. De volledige weg met /create-issues en /work-issues is met deze prompt niet getest.
+Getest op een kopie van een eerdere testapp, met dezelfde opdracht maar zonder /create-issues: je AI verving de kleuren en lettertypes in design-system/ en paste de app aan. De app bouwt en de gewone tests slagen. Het Arcadia-logo bleef staan. De volledige weg met /create-issues en /work-issues is met deze prompt niet getest.
 -->

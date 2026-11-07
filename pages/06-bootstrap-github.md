@@ -33,7 +33,7 @@ Dit doe je één keer. Je AI vraagt hier geen bevestiging.
 
 Na afloop staat er een map .github in je project, en je AI zet die meteen op GitHub. Je kan deze skill veilig opnieuw uitvoeren: wat al bestaat, blijft ongemoeid.
 
-Wat er echt in die sjablonen staat, zie je zo meteen in de issues van de oefenapp. In het tweede theorieblok leggen we uit waarom dit zo belangrijk is.
+Wat er echt in die sjablonen staat, zie je zo meteen in de issues van de demo-app. In het tweede theorieblok leggen we uit waarom dit zo belangrijk is.
 -->
 
 ---
@@ -55,7 +55,7 @@ layout: handson
 
 De algemene uitleg over toestemmingsvragen staat bij het deel over skills. Hier volstaat: kies Yes.
 
-Er is nog geen code, dus het bestand is nu nog kort. Toon als voorbeeld hoe het er later uitziet: github.com/yvanvds/workshop-test-breuken/blob/main/CLAUDE.md, met onder andere de commando's en de technische basis. De issues vullen het aan.
+Er is nog geen code, dus het bestand is nu nog kort. Toon als voorbeeld hoe het er later uitziet: github.com/yvanvds/calculate-waveforms/blob/main/AGENTS.md. De demo-app is met Codex gemaakt, en daar heet dit bestand AGENTS.md: het is de tegenhanger van CLAUDE.md. Toon het deel "Ontwikkelen, testen en bouwen", met de commando's en de technische basis. De issues vullen het aan.
 
 Je hoeft CLAUDE.md niet zelf op te slaan. /work-issues neemt het straks mee. Wie /init overslaat, kan het later nog uitvoeren: /create-issues en /work-issues werken ook zonder.
 

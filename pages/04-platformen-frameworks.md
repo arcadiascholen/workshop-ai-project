@@ -46,7 +46,7 @@ Een test is een klein stukje code dat controleert of je app nog doet wat je bedo
 
 <Callout variant="ai" title="Je moet ze niet zelf schrijven of lezen">De skills zorgen ervoor dat ze er komen, en CI voert ze bij elke PR uit.</Callout>
 
-Uit de oefenapp: de eis "als de uitkomst 1/2 is, telt 2/4 niet" werd een test.
+Uit de demo-app: de eis "elke golf duurt precies twee seconden" werd een test.
 
 <!--
 2 minuten.
@@ -55,7 +55,7 @@ Niet te diep op ingaan. Het gaat om het waarom: je kan niet na elke uitbreiding 
 
 Hoe de skills dat doen: /setup schrijft in PROJECT_OVERVIEW.md wat er zeker altijd moet blijven werken. /create-issues zet testen en CI in het eerste issue. /work-issue schrijft bij elk issue de testen die erbij horen.
 
-De oefenapp voor breuken uit de inleiding is zo gemaakt. De eis over 2/4 kwam van de leerkracht, en staat in PROJECT_OVERVIEW.md. Na PR 10 telt de app 47 testen voor de werking en 24 met de echte app, en die slaagden allemaal in CI.
+De demo-app uit de inleiding is zo gemaakt. De eis over twee seconden staat in PROJECT_OVERVIEW.md, bij de eerste versie en bij Testen. Na PR 8 telt de app 12 testen voor de werking, en één test met de echte app in de browser die alle handelingen doorloopt. Die slaagden allemaal in CI.
 -->
 
 ---
@@ -74,7 +74,7 @@ Het platform is de plek waar je app werkt. Dit is de eenvoudigste keuze.
 <!--
 2 minuten.
 
-Statisch betekent niet saai: ook een interactieve oefening kan. De oefenapp voor breuken uit de inleiding staat op GitHub Pages.
+Statisch betekent niet saai: ook een interactieve app kan. De demo-app uit de inleiding, met grafieken en geluid, staat op GitHub Pages.
 
 Je AI maakt dit in de praktijk ook zonder dat je het vraagt, maar dan zonder framework. Daarover straks meer.
 

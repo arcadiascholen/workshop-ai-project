@@ -44,29 +44,39 @@ layout: handson
 
 # Zo zien issues eruit
 
-Dit maakte `/create-issues` voor de oefenapp. Lees ook één eigen issue.
+Deze issues maakte je AI voor de demo-app. Lees ook één eigen issue.
 
 | Nr | Titel | Label |
 |---|---|---|
-| [1](https://github.com/yvanvds/workshop-test-breuken/issues/1) | Basis van de website klaarzetten | chore |
-| [2](https://github.com/yvanvds/workshop-test-breuken/issues/2) | Breuken vereenvoudigen oefenen | feature |
-| [3](https://github.com/yvanvds/workshop-test-breuken/issues/3) | Breuken optellen oefenen | feature |
-| [4](https://github.com/yvanvds/workshop-test-breuken/issues/4) | Website publiceren op GitHub Pages | chore |
+| [1](https://github.com/yvanvds/calculate-waveforms/issues/1) | Flutter-webbasis met vormgeving en automatische controles | chore |
+| [2](https://github.com/yvanvds/calculate-waveforms/issues/2) | Website automatisch publiceren op GitHub Pages | chore |
+| [3](https://github.com/yvanvds/calculate-waveforms/issues/3) | Sinusgolven toevoegen en interactief visualiseren | feature |
+| [4](https://github.com/yvanvds/calculate-waveforms/issues/4) | Golven gedurende twee seconden beluisteren | feature |
+| [5](https://github.com/yvanvds/calculate-waveforms/issues/5) | Golven vermenigvuldigen en optellen met directe doorwerking | feature |
+| [6](https://github.com/yvanvds/calculate-waveforms/issues/6) | Volumeverloop modelleren met envelopes en ADSR | feature |
 
 <style>
 table {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  font-size: 18px !important;
+}
+th,
+td {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
 }
 </style>
 
-<Callout variant="ai" title="Wanneer is issue 2 klaar? Onder andere:">Bij 4/8 telt 1/2 als juist. 2/4 telt als fout, want dat is nog niet volledig vereenvoudigd.</Callout>
+<Callout variant="ai" title="Wanneer is issue 4 klaar? Onder andere:">Het geluid start alleen als je op afspelen drukt, en stopt vanzelf na twee seconden.</Callout>
 
 <!--
 2 minuten.
 
-Open issue 2 op GitHub, en toon de kopjes Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar? Die komen uit de sjablonen van /bootstrap-github. Daarvoor was alleen de prompt van de vorige slide nodig, samen met PROJECT_OVERVIEW.md.
+Open issue 4 op GitHub, en toon de kopjes Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar? Die komen uit de sjablonen van /bootstrap-github. Daarvoor was alleen de prompt van de vorige slide nodig, samen met PROJECT_OVERVIEW.md.
 
-Het eerste issue zet altijd de basis: het framework, de eerste test en CI. Bij een website is het tweede issue publiceren. Samen leveren ze een eenvoudige pagina op die online staat. In de oefenapp staat publiceren nog op issue 4, omdat die test van vóór deze volgorde is. Bij jullie is issue 2 dus iets anders dan op deze slide.
+De demo-app is met de Codex-versie van de skills gemaakt, dus met $create-issues. De werkwijze is dezelfde als /create-issues.
+
+Het eerste issue zet altijd de basis: het framework, de eerste test en CI. Bij een website is het tweede issue publiceren. Samen leveren ze een eenvoudige pagina op die online staat. Zo staat het ook in de demo-app.
 
 Je eigen issues bekijken: vraag het je AI, of open het tabblad Issues van je project op GitHub. Klopt er iets niet? Zeg het je AI.
 
