@@ -4,6 +4,8 @@
 
 :root {
   --slidev-slide-container-background: var(--bg);
+  /* De navigatiebalk die altijd zichtbaar is in een smal venster, staat op die achtergrond. */
+  --slidev-controls-foreground: var(--ink);
 }
 
 html,
