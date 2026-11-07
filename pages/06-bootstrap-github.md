@@ -1,5 +1,6 @@
 ---
 layout: section
+eyebrow: Zelf doen
 ---
 
 # /bootstrap-github en /init

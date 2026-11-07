@@ -1,5 +1,6 @@
 ---
 layout: section
+eyebrow: Zelf doen
 ---
 
 # Issues maken en laten uitwerken
