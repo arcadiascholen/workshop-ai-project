@@ -96,7 +96,7 @@ Herhaal de keuzehulp niet: die staat op de laatste slide van het theorieblok. Da
 
 Doe het voor op het scherm: typ /setup en toon de eerste vraag. Laat daarna iedereen zelf starten.
 
-/setup vraagt ook wat er zeker altijd moet blijven werken. De testen hoef je niet zelf te schrijven. Over de vormgeving vraagt het niets: het vermeldt alleen dat je project een design system bevat, en dat je AI later een ander kan ontwerpen. Daar gaat de laatste slide van dit deel over.
+Wat er zeker altijd moet blijven werken, vraagt /setup niet. Je AI schrijft het zelf in PROJECT_OVERVIEW.md, en je ziet het in de samenvatting. De testen hoef je niet zelf te schrijven. Over de vormgeving vraagt het ook niets: het vermeldt alleen dat je project een design system bevat, en dat je AI later een ander kan ontwerpen. Daar gaat de laatste slide van dit deel over.
 
 Wordt /setup niet gevonden? Dan staat Claude Code waarschijnlijk niet in de map van je project. Ga terug naar de slide "Open je project".
 
@@ -125,7 +125,7 @@ Waar je op let bij het rondlopen:
 
 - Geen idee? Je AI vertrekt van een concrete situatie: wat kost nu veel tijd, of wat begrijpen leerlingen moeilijk?
 - Te grote plannen? Vraag wat de eerste versie zeker moet kunnen. De rest komt onder "Nog niet".
-- Leerlinggegevens? /setup vraagt ernaar. Ook als voorbeeld horen ze niet in een publieke repo.
+- Leerlinggegevens? /setup vraagt er niet naar, dus herinner eraan: zeg het zelf tegen je AI. Ook als voorbeeld horen ze niet in een publieke repo.
 - Toestemmingsvraag? Dat is normaal. De uitleg staat op de slide over toestemmingsvragen.
 
 Moet de terminal na een installatie opnieuw starten? Je AI legt uit hoe. Typ daarna opnieuw /setup. Het gesprek kan dan opnieuw beginnen, maar je antwoorden heb je nu klaar.

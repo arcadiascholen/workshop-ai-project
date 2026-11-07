@@ -53,7 +53,7 @@ Uit de oefenapp: de eis "als de uitkomst 1/2 is, telt 2/4 niet" werd een test.
 
 Niet te diep op ingaan. Het gaat om het waarom: je kan niet na elke uitbreiding alles zelf opnieuw proberen.
 
-Hoe de skills dat doen: /setup vraagt wat er zeker altijd moet blijven werken. /create-issues zet testen en CI in het eerste issue. /work-issue schrijft bij elk issue de testen die erbij horen.
+Hoe de skills dat doen: /setup schrijft in PROJECT_OVERVIEW.md wat er zeker altijd moet blijven werken. /create-issues zet testen en CI in het eerste issue. /work-issue schrijft bij elk issue de testen die erbij horen.
 
 De oefenapp voor breuken uit de inleiding is zo gemaakt. De eis over 2/4 kwam van de leerkracht, en staat in PROJECT_OVERVIEW.md. Na PR 10 telt de app 47 testen voor de werking en 24 met de echte app, en die slaagden allemaal in CI.
 -->
@@ -191,19 +191,19 @@ Er bestaan enorm veel goede frameworks. We tonen er zes, die het meest bruikbaar
 
 | Framework | Wat is het? | Wanneer kies je het? |
 |---|---|---|
-| **Astro** | Maakt statische websites | Een website die je gemakkelijk wil delen, zoals uitleg of een interactieve oefening |
+| **Astro** | Maakt statische websites | Een website met uitleg of meerdere pagina's, die je gemakkelijk wil delen |
+| **React** | Een website die werkt als één app | Eén interactieve app op één pagina, zoals een simulatie of een rekentool |
 | **Slidev** | Een website die werkt als een presentatie | Een presentatie, eventueel met interactieve slides |
 | **TeachBooks** | Zoals Astro, maar minder flexibel | Een wetenschappelijke cursus als website |
-| **React** | Ook voor websites | Een website die ook een backend nodig heeft |
 
 <!--
 2 minuten.
 
-Astro is de standaardkeuze van /setup voor een website.
+Astro en React zijn de twee keuzes van /setup voor een website. Gaat het vooral om tekst en pagina's, dan Astro. Gaat het vooral om één scherm dat reageert op wat je doet, dan React. Beide zijn statisch en gratis op GitHub Pages. React past ook als er later een backend bij komt.
 
 Slidev: ook deze slides zijn ermee gemaakt. Het is veel flexibeler dan PowerPoint, want elke slide kan een kleine app zijn.
 
-TeachBooks en React stelt /setup alleen voor als ze echt beter passen.
+TeachBooks stelt /setup alleen voor als het echt beter past.
 -->
 
 ---
@@ -248,14 +248,16 @@ Eerst vertel je wat je wil maken, en wat de eerste versie moet kunnen. Daarna:
       <li>Bestanden op de eigen computer</li>
       <li>Backend (bijvoorbeeld Firebase)</li>
     </ul>
-    <p class="keuze__vraag">2. Gegevens over leerlingen?</p>
-    <p class="keuze__tekst">Niet in een publieke repo of op een publieke site. Ze blijven op de eigen computer.</p>
+    <p class="keuze__vraag">Gegevens over leerlingen?</p>
+    <p class="keuze__tekst">/setup vraagt er niet naar: zeg het zelf. Ze blijven op de eigen computer.</p>
   </div>
   <div>
-    <p class="keuze__vraag">3. Waar moet de app werken?</p>
+    <p class="keuze__vraag">2. Waar moet de app werken?</p>
     <dl class="keuze__paren">
-      <dt>Website die je gemakkelijk wil delen</dt>
+      <dt>Website met uitleg</dt>
       <dd>Astro</dd>
+      <dt>Eén interactieve app op één pagina</dt>
+      <dd>React</dd>
       <dt>Presentatie</dt>
       <dd>Slidev</dd>
       <dt>Mogelijk ook een Windows-, Mac- of Android-app, of het is nog onduidelijk</dt>
@@ -312,13 +314,15 @@ Eerst vertel je wat je wil maken, en wat de eerste versie moet kunnen. Daarna:
 <!--
 3 minuten.
 
-Deze slide volgt de volgorde van /setup: het doel, de eerste versie, opslag, leerlinggegevens, en dan platform en framework. Hij gebruikt ook dezelfde woorden. In teal staat wat de AI voorstelt.
+Deze slide volgt de volgorde van /setup: het doel, de eerste versie, opslag, en dan platform en framework. Hij gebruikt ook dezelfde woorden. In teal staat wat de AI voorstelt.
 
 Bij vraag 1 vraagt /setup ook of de gegevens op een andere computer beschikbaar moeten zijn. Het raadt de eenvoudigste manier aan die volstaat.
 
-Bij vraag 2: tenzij je school hiervoor een afgesproken oplossing heeft.
+Leerlinggegevens: /setup vraagt er niet naar, want de skills zijn niet alleen voor onderwijsapps. Daarom staat het hier. Zeg je het zelf, dan zoekt je AI een manier waarbij ze op de eigen computer blijven, tenzij je school hiervoor een afgesproken oplossing heeft.
 
-Bij vraag 3 kan /setup ook TeachBooks, React of .NET voorstellen, als die echt beter passen.
+Bij vraag 2 kan /setup ook TeachBooks of .NET voorstellen, als die echt beter passen.
+
+Wat er zeker moet blijven werken, vraagt /setup niet. Je AI schrijft het zelf in PROJECT_OVERVIEW.md, en jij kijkt het na in de samenvatting.
 
 Weet je iets niet? Zeg dat gewoon: dan doet /setup een voorstel, en jij zegt ja of dat het anders moet.
 
