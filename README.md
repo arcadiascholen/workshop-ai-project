@@ -2,6 +2,8 @@
 
 Slides voor de workshop van 120 minuten voor leerkrachten, gemaakt met [Slidev](https://sli.dev). Deelnemers werken tijdens de workshop met [project-template](https://github.com/arcadiascholen/project-template).
 
+De slides staan online op <https://arcadiascholen.github.io/workshop-ai-project/>. Elke push naar `main` publiceert de site opnieuw.
+
 ## De slides starten
 
 Je hebt Node.js nodig.
