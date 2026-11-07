@@ -235,3 +235,9 @@ body {
 .slidev-layout .ai-callout p {
   margin: 0;
 }
+
+/* Een hands-on slide heeft dezelfde achtergrond als de standaard callout. De varianten
+   ai en warning hebben een eigen achtergrond en blijven buiten deze regel. */
+.slidev-layout.handson .ai-callout:not(.ai-callout--ai, .ai-callout--warning) {
+  background: var(--surface);
+}
