@@ -288,16 +288,18 @@ Eerlijk vermelden: in de test is geen enkele controle gefaald. De weg bij een ge
 
 Alle controles geslaagd? Dan voegt je AI de code van de branch toe aan de hoofdbranch. Dat is je echte app.
 
-- Dit gebeurt vanzelf: je hoeft niets te doen
+- Meestal gebeurt dit vanzelf: je hoeft niets te doen
 - Pas nu verandert je app
 - Bij een website gaat je site daarna vanzelf online
 
 <Callout variant="ai" title="In PR 8">Iets meer dan een minuut na de geslaagde controle voegde de AI alles samen.</Callout>
 
-<Callout title="Lukt de merge niet?">Je AI stopt en legt uit wat er aan de hand is, bijvoorbeeld bij een conflict.</Callout>
+<Callout title="Merget je AI niet?">Bij een conflict stopt je AI en legt uit wat er aan de hand is. Soms doet je AI de merge gewoon niet. Merge dan zelf op GitHub, en zeg het daarna tegen je AI.</Callout>
 
 <!--
 1 minuut.
+
+Zelf mergen: open de PR op GitHub, en klik onderaan op Merge pull request en daarna Confirm merge. Zeg het daarna tegen je AI, zodat die verder kan met /cleanup.
 
 Een conflict betekent dat er op twee plaatsen iets aan dezelfde code veranderd is. Je AI lost dat niet met ingewikkelde ingrepen op, maar legt het uit. Vraag dan gewoon wat er nu kan.
 
@@ -316,7 +318,7 @@ Bij een website start de merge ook de publicatie. Wat dat is en waarom het belan
 - De issues zijn gesloten
 - Je AI staat terug op de hoofdbranch, klaar voor de volgende reeks
 
-<Callout variant="ai" title="Niets gaat verloren">Issue 3 en PR 8 blijven op GitHub staan. Alleen de branch codex/issues-3-6 is weg, 19 seconden na de merge.</Callout>
+<Callout variant="ai" title="Niets gaat verloren">Issue 3 en PR 8 blijven op GitHub staan. Alleen de branch codex/issues-3-6 is weg.</Callout>
 
 <!--
 1 minuut.

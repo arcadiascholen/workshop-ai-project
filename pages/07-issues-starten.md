@@ -26,8 +26,6 @@ Een issue is een goed omschreven taak. Je AI schrijft ze voor jou.
 - Reken op 3 tot 8 issues, in de volgorde waarin ze gemaakt moeten worden
 - Op het einde toont je AI een lijst met nummers en titels
 
-<Callout variant="warning" title="Achterop?">Werk eerst PROJECT_OVERVIEW.md af. Je issues mogen ook tijdens de uitleg ontstaan.</Callout>
-
 <!--
 4 minuten.
 
@@ -44,41 +42,27 @@ layout: handson
 
 # Zo zien issues eruit
 
-Deze issues maakte je AI voor de demo-app. Lees ook één eigen issue.
+Je issues staan op GitHub. Ga ze zelf bekijken.
 
-| Nr | Titel | Label |
-|---|---|---|
-| [1](https://github.com/yvanvds/calculate-waveforms/issues/1) | Flutter-webbasis met vormgeving en automatische controles | chore |
-| [2](https://github.com/yvanvds/calculate-waveforms/issues/2) | Website automatisch publiceren op GitHub Pages | chore |
-| [3](https://github.com/yvanvds/calculate-waveforms/issues/3) | Sinusgolven toevoegen en interactief visualiseren | feature |
-| [4](https://github.com/yvanvds/calculate-waveforms/issues/4) | Golven gedurende twee seconden beluisteren | feature |
-| [5](https://github.com/yvanvds/calculate-waveforms/issues/5) | Golven vermenigvuldigen en optellen met directe doorwerking | feature |
-| [6](https://github.com/yvanvds/calculate-waveforms/issues/6) | Volumeverloop modelleren met envelopes en ADSR | feature |
+1. Open je eigen repository op GitHub, en klik op het tabblad **Issues**
+2. Elk issue heeft een duidelijk label, zoals feature of chore. Dat komt van `/bootstrap-github`
+3. Open één issue en lees het helemaal: de inhoud is gedetailleerd
+4. Kies bovenaan tussen **Open** en **Closed**: zo zie je ook de issues die al klaar zijn
 
-<style>
-table {
-  margin-bottom: 16px;
-  font-size: 18px !important;
-}
-th,
-td {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
-}
-</style>
-
-<Callout variant="ai" title="Wanneer is issue 4 klaar? Onder andere:">Het geluid start alleen als je op afspelen drukt, en stopt vanzelf na twee seconden.</Callout>
+<Callout variant="ai" title="Wat staat er in een issue?">Drie kopjes: Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar?</Callout>
 
 <!--
 2 minuten.
 
-Open issue 4 op GitHub, en toon de kopjes Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar? Die komen uit de sjablonen van /bootstrap-github. Daarvoor was alleen de prompt van de vorige slide nodig, samen met PROJECT_OVERVIEW.md.
+Toon het eerst zelf, bijvoorbeeld bij de demo-app: github.com/yvanvds/calculate-waveforms/issues. Open daar issue 4 (Golven gedurende twee seconden beluisteren), en toon de kopjes Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar? Die komen uit de sjablonen van /bootstrap-github. Daarvoor was alleen de prompt van de vorige slide nodig, samen met PROJECT_OVERVIEW.md. Onder Wanneer is issue 4 klaar? staat onder andere: het geluid start alleen als je op afspelen drukt, en stopt vanzelf na twee seconden.
+
+Gesloten issues zijn er nu nog niet, of alleen als je AI al iets afgewerkt heeft. Straks, na /work-issues, staan ze onder Closed. Ze verdwijnen dus niet.
 
 De demo-app is met de Codex-versie van de skills gemaakt, dus met $create-issues. De werkwijze is dezelfde als /create-issues.
 
 Het eerste issue zet altijd de basis: het framework, de eerste test en CI. Bij een website is het tweede issue publiceren. Samen leveren ze een eenvoudige pagina op die online staat. Zo staat het ook in de demo-app.
 
-Je eigen issues bekijken: vraag het je AI, of open het tabblad Issues van je project op GitHub. Klopt er iets niet? Zeg het je AI.
+Klopt er iets niet in een issue? Zeg het je AI.
 
 Achterop? Sla het lezen over en ga meteen naar de volgende stap.
 -->
