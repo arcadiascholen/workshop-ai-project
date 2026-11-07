@@ -8,8 +8,6 @@ eyebrow: Zelf doen
 <!--
 0:55, 20 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
 
-De slides in dit bestand tellen op tot 19 minuten. De laatste minuut is voor de slide over het design system (#6). Zolang die er niet staat, is dat extra marge bij /setup.
-
 Codex: je start een skill met $ in plaats van /, dus $setup. De stappen lopen gelijk. Zie docs/CODEX.md in de template.
 -->
 
@@ -98,7 +96,7 @@ Herhaal de keuzehulp niet: die staat op de laatste slide van het theorieblok. Da
 
 Doe het voor op het scherm: typ /setup en toon de eerste vraag. Laat daarna iedereen zelf starten.
 
-/setup vraagt ook wat er zeker altijd moet blijven werken. De testen hoef je niet zelf te schrijven. Over de vormgeving vraagt het niets: het vermeldt alleen dat je project een design system bevat.
+/setup vraagt ook wat er zeker altijd moet blijven werken. De testen hoef je niet zelf te schrijven. Over de vormgeving vraagt het niets: het vermeldt alleen dat je project een design system bevat, en dat je AI later een ander kan ontwerpen. Daar gaat de laatste slide van dit deel over.
 
 Wordt /setup niet gevonden? Dan staat Claude Code waarschijnlijk niet in de map van je project. Ga terug naar de slide "Open je project".
 
@@ -181,4 +179,26 @@ Je AI zet het document meteen op GitHub, en noemt daarna de volgende stappen: /b
 Later aanpassen kan altijd: vraag het gewoon aan je AI.
 
 Achterop? Geen overzicht om 1:14? Laat je AI verder werken, en doe de volgende stappen mee zodra het document er is.
+-->
+
+---
+
+# Liever een andere stijl?
+
+Je project bevat een design system: vaste kleuren, lettertypes en onderdelen. Je AI gebruikt het vanzelf voor je app.
+
+Je AI kan ook een nieuw ontwerpen dat het huidige vervangt. Dat doen we vandaag niet: dit is iets voor thuis.
+
+<PromptBlock label="Thuis, eerst dit">/create-issues Ontwerp een nieuw design system in deze stijl: [omschrijf de stijl]. Vervang het huidige in design-system/ en pas de app aan.</PromptBlock>
+
+<PromptBlock label="Daarna, met de nummers die je AI noemt">/work-issues [de nummers]</PromptBlock>
+
+<!--
+1 minuut. Niet uitvoeren: dit is thuiswerk, want de workshop duurt al lang genoeg. Vermeld het, en ga meteen door.
+
+Waarom het erin zit: /setup heeft het net vermeld, en sommigen zullen vragen of hun app er dan zo moet uitzien. Dat hoeft niet.
+
+/create-issues en /work-issues doen we straks samen. Thuis ken je ze dus al.
+
+Getest op een kopie van de oefenapp, met dezelfde opdracht maar zonder /create-issues: je AI verving de kleuren en lettertypes in design-system/ en paste de app aan. De app bouwt en de gewone tests slagen. Het Arcadia-logo bleef staan. De volledige weg met /create-issues en /work-issues is met deze prompt niet getest.
 -->
