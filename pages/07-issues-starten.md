@@ -101,7 +101,7 @@ Achterop? Start dit zodra je issues er zijn, ook tijdens het theorieblok. Lukt h
 
 <Callout variant="ai" title="Wacht je AI op jou?">Lees de vraag en antwoord kort. Begrijp je ze niet, vraag dan wat het betekent. Daarna werkt je AI verder.</Callout>
 
-<Callout title="Klaar met deze reeks?">Open de link van je site, en start de volgende reeks: <code>/work-issues 3 4 5</code>. Luister daarna gewoon verder.</Callout>
+<Callout title="Klaar met deze reeks?">Open de link van je site. Start <code>/work-issues 3 4 5</code> in een nieuwe chat, en luister daarna gewoon verder.</Callout>
 
 <!--
 2 minuten.
@@ -110,7 +110,7 @@ Zeg dit duidelijk: we gaan nu door met de theorie, terwijl de AI werkt. Niemand 
 
 /work-issues is gemaakt om zonder tussenkomst te lopen, maar soms vraagt het toch iets. Als niemand kijkt, blijft het daar stilstaan. Vandaar: af en toe even kijken.
 
-Nog niet zover? Geen probleem: werk rustig verder terwijl wij verdergaan. Op het einde bekijken we samen wat er klaar is. De nummers 3 4 5 zijn een voorbeeld: gebruik wat je AI noemde.
+Nog niet zover? Geen probleem: werk rustig verder terwijl wij verdergaan. Op het einde bekijken we samen wat er klaar is. De nummers 3 4 5 zijn een voorbeeld: gebruik wat je AI noemde. Een nieuwe chat start je in hetzelfde project, zoals bij "Start je AI". Waarom, komt op het einde van het theorieblok.
 
 In de test duurde een reeks van vier issues zo'n 17 minuten op een snelle machine. Een reeks van twee is korter, maar die tijd is nog niet gemeten. Reken erop dat een deel van de groep nog bezig is als het theorieblok afloopt. Zet je laptop aan het stopcontact, en laat hem niet in slaapstand gaan: dan stopt je AI.
 

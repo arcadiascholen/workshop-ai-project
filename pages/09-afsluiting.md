@@ -32,7 +32,7 @@ Is je AI klaar? Dan vertelt die wat er af is, en wat je nu kan doen.
 
 <PromptBlock label="Klaar?">Wat is de link van mijn site? Heb ik geen site, start mijn app dan voor mij op.</PromptBlock>
 
-- Start de volgende reeks: `/work-issues 3 4 5`
+- Start de volgende reeks in een nieuwe chat: `/work-issues 3 4 5`
 - Wil je iets anders of beters? Begin met `/create-issues`
 
 <Callout variant="ai" title="Nog bezig?">Dat is normaal. Laat je AI werken, kijk af en toe of die op je wacht, en kijk hier mee.</Callout>
@@ -200,7 +200,7 @@ Om 1:58 ga je verder.
 
 Zo werk je thuis verder: `/create-issues`, en daarna `/work-issues`.
 
-<Callout title="De demo-app is een voorbeeld">De repo calculate-waveforms hoort niet bij je eigen project. Je hebt ze niet nodig om verder te werken.</Callout>
+<Callout title="Een nieuwe functie?">Praat er eerst over met <code>/discuss</code>. Je AI denkt mee, maar maakt nog geen issues of code.</Callout>
 
 <Callout variant="ai" title="Je AI is nog bezig?">Laat je laptop open tot die klaar is, ook na de workshop.</Callout>
 
@@ -211,7 +211,7 @@ Is er nog een AI aan het werk? Dan gaat die alleen door als de laptop open blijf
 
 Niet iedereen heeft alle drie de punten. Geen issues? /create-issues kan ook thuis. Geen overzicht? Start thuis /setup.
 
-De demo-app is alleen om te bekijken hoe het eruitziet. Laat niemand ze klonen of erin verder werken.
+/discuss kwam kort aan bod bij de skills. Je AI leest je project en zoekt op het internet, maar past niets aan. Ben je uitgepraat, dan maak je er issues van met /create-issues, en daarna /work-issues. In Codex typ je $discuss.
 
 Bedank iedereen. Einde om 2:00.
 -->

@@ -338,12 +338,14 @@ Dit lijkt veel, maar twee skills volstaan.
 
 <PromptBlock label="Laat je AI eraan werken">/work-issues [de nummers, of een korte opdracht]</PromptBlock>
 
-<Callout title="En daarna?">Je bekijkt het resultaat, en je start een nieuwe reeks met de volgende nummers.</Callout>
+<Callout title="En daarna?">Je bekijkt het resultaat. Start dan een <strong>nieuwe chat</strong> voor de volgende reeks. Anders blijft je AI informatie meesturen die niet meer nodig is.</Callout>
 
 <!--
 1 minuut.
 
 Dit is de boodschap om mee te nemen. /create-issues zoekt zelf uit wat er echt aan de hand is en maakt een of meer issues. /work-issues doet alle stappen die je net zag. Een korte opdracht mag ook, zoals: Kies de issues waar je nu mee verder kan. Het neemt nooit meer dan 10 issues in één keer.
+
+Blijf niet onbeperkt in dezelfde chat werken. Je AI stuurt bij elke vraag het hele gesprek mee, ook wat over de vorige reeks ging. Dat helpt niet, en je zit sneller aan je limiet, zoals bij de agents. Een nieuwe chat start je in hetzelfde project, zoals bij "Start je AI". Alles wat je AI nodig heeft, staat op GitHub en in je project.
 
 In de test duurde een reeks van vier issues zo'n 17 minuten op een snelle machine, inclusief CI, merge, cleanup en publicatie. Bij jullie kan dat langer duren, dus het is normaal als je AI nog bezig is.
 
