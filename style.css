@@ -4,11 +4,35 @@
 
 :root {
   --slidev-slide-container-background: var(--bg);
+  /* De navigatiebalk die altijd zichtbaar is in een smal venster, staat op die achtergrond. */
+  --slidev-controls-foreground: var(--ink);
 }
 
 html,
 body {
   background: var(--bg);
+}
+
+/* Slidev behoudt de verhouding van de slide, dus bij een ander venster blijft er
+   links en rechts of boven en onder ruimte over. Die ruimte krijgt de achtergrond
+   van de zichtbare slide: elke layout schildert ze zelf, want verborgen slides
+   tekenen niets. Slidevs witte achtergrond onder de slide moet weg, anders schijnt
+   die door op de afgeronde pixels aan de rand. */
+#slide-content {
+  --slide-bleed: 300vmax;
+  background: transparent;
+  overflow: visible;
+}
+
+/* Geen position op .slidev-layout: dit vlak mag niet meetellen in zijn scrollHeight.
+   Zonder pointer-events blijft klikken naast de slide de vorige of volgende tonen. */
+#slide-content .slidev-layout::before {
+  content: "";
+  position: absolute;
+  inset: calc(var(--slide-bleed) * -1);
+  z-index: -1;
+  background: inherit;
+  pointer-events: none;
 }
 
 .slidev-layout {
@@ -154,7 +178,6 @@ body {
 .slidev-layout.handson {
   background: var(--surface-sunken);
   padding-top: 72px;
-  position: relative;
 }
 
 .handson__band {
@@ -169,6 +192,16 @@ body {
   letter-spacing: 0.08em;
   line-height: 1.3;
   text-transform: uppercase;
+}
+
+/* De balk loopt door tot aan de rand van het venster, de tekst blijft op zijn plaats.
+   Eén pixel extra bovenaan: bij een oneven vensterhoogte valt de bovenrand tussen twee
+   pixels, en dan zou de bovenste rij lichter worden. */
+#slide-content .handson__band {
+  inset-inline: calc(var(--slide-bleed) * -1);
+  top: -1px;
+  padding: 9px calc(var(--slide-bleed) + 56px) 8px;
+  pointer-events: none;
 }
 
 /* Componenten op beamerformaat */
@@ -201,4 +234,10 @@ body {
 
 .slidev-layout .ai-callout p {
   margin: 0;
+}
+
+/* Een hands-on slide heeft dezelfde achtergrond als de standaard callout. De varianten
+   ai en warning hebben een eigen achtergrond en blijven buiten deze regel. */
+.slidev-layout.handson .ai-callout:not(.ai-callout--ai, .ai-callout--warning) {
+  background: var(--surface);
 }
