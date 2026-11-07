@@ -98,7 +98,7 @@ Limieten kunnen wijzigen: kijk ze na voor elke workshop.
 - Namen, punten en andere persoonsgegevens horen **niet** in een publieke repo
 - Ook een site op GitHub Pages kan iedereen bekijken
 
-<Callout variant="warning" title="Werkt je app met leerlinggegevens?">Hou ze op je eigen computer, ook als het maar een voorbeeld is. /setup vraagt hiernaar.</Callout>
+<Callout variant="warning" title="Werkt je app met leerlinggegevens?">Hou ze op je eigen computer, ook als het maar een voorbeeld is. Zeg het bij /setup tegen je AI.</Callout>
 
 <!--
 2 minuten.
@@ -109,5 +109,5 @@ Leerlinggegevens zijn iets anders. Ook wat je later uit een publieke repo verwij
 
 Een private repo maakt het ook niet vanzelf in orde: volg de afspraken van je school. En een site op GitHub Pages is openbaar, ook als ze uit een private repo komt op een betaald abonnement. Alleen GitHub Enterprise Cloud kan een site privaat publiceren.
 
-/setup vraagt of er leerlinggegevens in je app komen, en zoekt mee naar een manier waarbij ze op je eigen computer blijven.
+/setup vraagt hier zelf niet naar, want de skills zijn niet alleen voor onderwijsapps. Daarom wijs je er hier op. Zegt iemand dat de app met leerlinggegevens werkt, dan zoekt je AI mee naar een manier waarbij ze op de eigen computer blijven.
 -->
