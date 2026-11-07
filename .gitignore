@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.slidev/
+.vite/
+components.d.ts
+*.local
+
+# Werkdocument, bewust buiten de repo
+draft.md
+.~lock*
