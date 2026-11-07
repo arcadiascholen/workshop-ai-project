@@ -74,7 +74,7 @@ Zeg: dit is wat er op dit moment op jullie laptop gebeurt. We volgen één issue
 
 Een herinnering: kijk af en toe of je AI op je wacht. Dat staat op de slide "Je AI werkt verder, jij luistert".
 
-De uitleg over GitHub en CI hebben we al gehad. Nu tonen we hoe alles samenwerkt.
+Wat GitHub is, weten ze al. Issues hebben ze net zelf gemaakt. Nu tonen we hoe alles samenwerkt, en wat een pull request en CI zijn.
 -->
 
 ---
@@ -249,7 +249,7 @@ Bekijk: [PR 7](https://github.com/yvanvds/calculate-waveforms/pull/7) (issues 1 
 <!--
 2 minuten.
 
-Wat CI is, weten ze al: CI voert de testen uit. Niet opnieuw uitleggen.
+Hier komt CI voor het eerst echt aan bod. CI staat voor continuous integration. Eén zin volstaat: CI voert de testen uit op GitHub. Waarom testen nodig zijn, zagen ze in het eerste theorieblok. De kosten van CI kwamen aan bod bij "Publiek of privaat?".
 
 Open PR 8: github.com/yvanvds/calculate-waveforms/pull/8. Toon de beschrijving: wat er veranderd is, de beslissingen en de testresultaten. Toon op het tabblad Checks de geslaagde controle met de naam flutter. De tweede, publish, is overgeslagen: die publiceert pas na de merge.
 

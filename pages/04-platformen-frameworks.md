@@ -6,9 +6,9 @@ eyebrow: Theorie
 # Platformen en frameworks
 
 <!--
-0:35, 20 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
+0:32, 18 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
 
-De slides van dit deel tellen op tot 20 minuten.
+De slides van dit deel tellen op tot 18 minuten.
 -->
 
 ---
@@ -31,31 +31,7 @@ Je vraagt om een app, en je beschrijft wat die moet kunnen. Dit zeg je meestal n
 
 Een ontwikkelaar denkt hier eerst over na, en jij vergeet het. Dat is logisch: je weet nog niet dat deze vragen bestaan. Net door deze keuzes eerst te maken, krijgt je project een stevige basis.
 
-In dit blok gaat het over testen, platformen, opslag en frameworks. Vormgeving en testen komen terug bij /setup. Vlot uitbreiden komt in het tweede theorieblok.
--->
-
----
-
-# Waarom testen?
-
-Een test is een klein stukje code dat controleert of je app nog doet wat je bedoelde.
-
-- Bij elke uitbreiding kan je AI iets stukmaken dat eerder werkte
-- Zonder testen zie je dat pas als je alles zelf opnieuw probeert
-- Vraag je er niet naar, dan ontbreken ze meestal grotendeels
-
-<Callout variant="ai" title="Je moet ze niet zelf schrijven of lezen">De skills zorgen ervoor dat ze er komen, en CI voert ze bij elke PR uit.</Callout>
-
-Uit de demo-app: de eis "elke golf duurt precies twee seconden" werd een test.
-
-<!--
-2 minuten.
-
-Niet te diep op ingaan. Het gaat om het waarom: je kan niet na elke uitbreiding alles zelf opnieuw proberen.
-
-Hoe de skills dat doen: /setup schrijft in PROJECT_OVERVIEW.md wat er zeker altijd moet blijven werken. /create-issues zet testen en CI in het eerste issue. /work-issue schrijft bij elk issue de testen die erbij horen.
-
-De demo-app uit de inleiding is zo gemaakt. De eis over twee seconden staat in PROJECT_OVERVIEW.md, bij de eerste versie en bij Testen. Na PR 8 telt de app 12 testen voor de werking, en één test met de echte app in de browser die alle handelingen doorloopt. Die slaagden allemaal in CI.
+In dit blok gaat het over platformen, opslag, frameworks en testen. Vormgeving en testen komen terug bij /setup. Vlot uitbreiden komt in het tweede theorieblok.
 -->
 
 ---
@@ -233,98 +209,29 @@ Flutter gebruik ik zelf graag. Je hoeft weinig aan te passen om van dezelfde app
 
 ---
 
-# Keuzehulp: dit vraagt /setup straks
+# Waarom testen?
 
-Eerst vertel je wat je wil maken, en wat de eerste versie moet kunnen. Daarna:
+Een test is een klein stukje code dat controleert of je app nog doet wat je bedoelde.
 
-<div class="keuze">
-  <div>
-    <p class="keuze__vraag">1. Moet de app iets onthouden?</p>
-    <ul class="keuze__lijst">
-      <li>Niets bewaren</li>
-      <li>Browsergeheugen</li>
-      <li>Bestand downloaden en uploaden</li>
-      <li>Gegevens in de URL</li>
-      <li>Bestanden op de eigen computer</li>
-      <li>Backend (bijvoorbeeld Firebase)</li>
-    </ul>
-    <p class="keuze__vraag">Gegevens over leerlingen?</p>
-    <p class="keuze__tekst">/setup vraagt er niet naar: zeg het zelf. Ze blijven op de eigen computer.</p>
-  </div>
-  <div>
-    <p class="keuze__vraag">2. Waar moet de app werken?</p>
-    <dl class="keuze__paren">
-      <dt>Website met uitleg</dt>
-      <dd>Astro</dd>
-      <dt>Eén interactieve app op één pagina</dt>
-      <dd>React</dd>
-      <dt>Presentatie</dt>
-      <dd>Slidev</dd>
-      <dt>Mogelijk ook een Windows-, Mac- of Android-app, of het is nog onduidelijk</dt>
-      <dd>Flutter</dd>
-      <dt>Persoonlijke tool, werkt zonder internet, bewaart gegevens lokaal</dt>
-      <dd>Flutter als lokale app</dd>
-    </dl>
-  </div>
-</div>
+- Bij elke uitbreiding kan je AI iets stukmaken dat eerder werkte
+- Zonder testen zie je dat pas als je alles zelf opnieuw probeert
+- Testen kijken ook randgevallen na: wat als iemand tekst typt waar je app een getal verwacht? Dat vergeet je zelf snel na een aanpassing.
+- Vraag je er niet naar, dan ontbreken ze meestal grotendeels
 
-<style>
-.keuze {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-6);
-  font-size: 20px;
-  line-height: 1.3;
-}
-.slidev-layout .keuze__vraag {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--forest);
-  margin: 0 0 6px;
-}
-.slidev-layout .keuze__tekst {
-  margin: 0;
-}
-.slidev-layout .keuze__lijst {
-  margin: 0 0 14px;
-}
-.slidev-layout .keuze__lijst li {
-  margin: 0 0 2px;
-  line-height: 1.3;
-}
-.keuze__paren {
-  display: grid;
-  grid-template-columns: 1fr 120px;
-  row-gap: var(--space-2);
-  margin: 0;
-}
-.keuze__paren dt {
-  border-bottom: 1px solid var(--line);
-  padding: 0 var(--space-4) var(--space-2) 0;
-}
-.keuze__paren dd {
-  margin: 0;
-  font-weight: 700;
-  color: var(--ai-text);
-  border-bottom: 1px solid var(--line);
-  padding-bottom: var(--space-2);
-}
-</style>
+<Callout variant="ai" title="Je moet ze niet zelf schrijven of lezen">De skills zorgen ervoor dat ze er komen, en dat ze bij elke aanpassing vanzelf lopen.</Callout>
+
+Uit de demo-app: de eis "elke golf duurt precies twee seconden" werd een test.
 
 <!--
 3 minuten.
 
-Deze slide volgt de volgorde van /setup: het doel, de eerste versie, opslag, en dan platform en framework. Hij gebruikt ook dezelfde woorden. In teal staat wat de AI voorstelt.
+Niet te diep op ingaan. Het gaat om het waarom: je kan niet na elke uitbreiding alles zelf opnieuw proberen.
 
-Bij vraag 1 vraagt /setup ook of de gegevens op een andere computer beschikbaar moeten zijn. Het raadt de eenvoudigste manier aan die volstaat.
+Randgevallen zijn de situaties waar je zelf niet aan denkt als je even iets uitprobeert: een leeg veld, een tekst in plaats van een getal, een heel groot getal. Een test probeert ze elke keer opnieuw, ook na een aanpassing die er niets mee te maken lijkt te hebben.
 
-Leerlinggegevens: /setup vraagt er niet naar, want de skills zijn niet alleen voor onderwijsapps. Daarom staat het hier. Zeg je het zelf, dan zoekt je AI een manier waarbij ze op de eigen computer blijven, tenzij je school hiervoor een afgesproken oplossing heeft.
+Dat de testen bij elke aanpassing vanzelf lopen, heet CI. Dat komt terug in het tweede theorieblok.
 
-Bij vraag 2 kan /setup ook TeachBooks of .NET voorstellen, als die echt beter passen.
+Hoe de skills dat doen: /setup schrijft in PROJECT_OVERVIEW.md wat er zeker altijd moet blijven werken. /create-issues zet testen en CI in het eerste issue. /work-issue schrijft bij elk issue de testen die erbij horen.
 
-Wat er zeker moet blijven werken, vraagt /setup niet. Je AI schrijft het zelf in PROJECT_OVERVIEW.md, en jij kijkt het na in de samenvatting.
-
-Weet je iets niet? Zeg dat gewoon: dan doet /setup een voorstel, en jij zegt ja of dat het anders moet.
-
-Laat iedereen even nadenken over zijn eigen idee. Niemand moet nu al kiezen. Dat gebeurt straks met /setup.
+De demo-app uit de inleiding is zo gemaakt. De eis over twee seconden staat in PROJECT_OVERVIEW.md, bij de eerste versie en bij Testen. Na PR 8 telt de app 12 testen voor de werking, en één test met de echte app in de browser die alle handelingen doorloopt. Die slaagden allemaal in CI.
 -->

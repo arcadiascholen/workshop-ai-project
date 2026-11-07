@@ -6,7 +6,7 @@ eyebrow: Zelf doen
 # Skills en /setup
 
 <!--
-0:55, 20 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
+0:50, 25 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
 
 Codex: je start een skill met $ in plaats van /, dus $setup. De stappen lopen gelijk. Zie docs/CODEX.md in de template.
 -->
@@ -85,14 +85,14 @@ Eerst maak je samen met je AI duidelijk wat je project wordt.
 <PromptBlock>/setup</PromptBlock>
 
 - Je AI stelt één vraag tegelijk, hooguit een tiental
-- De keuzes ken je uit de keuzehulp: opslag, platform en framework
+- De keuzes ken je uit het theorieblok: opslag, platform en framework
 - Bij technische keuzes doet je AI een voorstel. Jij zegt ja, of dat het anders moet.
 - Er komt nog geen code: dat gebeurt later, via issues
 
 <!--
 2 minuten.
 
-Herhaal de keuzehulp niet: die staat op de laatste slide van het theorieblok. Daar staan dezelfde woorden als in /setup.
+Herhaal het theorieblok niet. /setup vraagt eerst wat je wil maken en wat de eerste versie moet kunnen. Daarna komen opslag, platform en framework, met dezelfde woorden als in het theorieblok.
 
 Doe het voor op het scherm: typ /setup en toon de eerste vraag. Laat daarna iedereen zelf starten.
 
@@ -117,7 +117,7 @@ layout: handson
 <PromptBlock label="Achterop?">Ik heb weinig tijd. Kies voor de rest zelf de eenvoudigste optie, en schrijf PROJECT_OVERVIEW.md. Vermeld wat je koos.</PromptBlock>
 
 <!--
-11 minuten. Laat deze slide staan terwijl iedereen werkt, en loop rond.
+16 minuten. Laat deze slide staan terwijl iedereen werkt, en loop rond.
 
 In de test duurde /setup ongeveer 3 minuten, op een snelle machine en met een snelle testpersoon. De skill rekent op ongeveer een kwartier. Er is dus marge, maar reken niet op 3 minuten.
 

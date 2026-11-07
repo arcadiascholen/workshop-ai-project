@@ -92,7 +92,7 @@ Plan als de installatie misloopt. Dit is nog niet getest op Windows (project-tem
 
 Volgens de documentatie werkt Claude Code op Windows ook zonder Git, via PowerShell. Dat is nog na te kijken in project-template#8.
 
-Tijdslimiet: om 0:25 ga je verder met de uitleg, ook als niet iedereen klaar is. Help wie vast zit tijdens de uitleg en het theorieblok, zodat die mee is bij /setup om 0:55.
+Tijdslimiet: om 0:25 ga je verder met de uitleg, ook als niet iedereen klaar is. Help wie vast zit tijdens de uitleg en het theorieblok, zodat die mee is bij /setup om 0:50.
 -->
 
 ---

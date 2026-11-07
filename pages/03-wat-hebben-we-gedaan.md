@@ -6,7 +6,7 @@ eyebrow: Uitleg
 # Wat hebben we net gedaan?
 
 <!--
-0:25, 10 minuten voor het hele deel.
+0:25, 7 minuten voor het hele deel.
 
 Wie nog bezig is met de installatie, werkt gewoon verder. Help hen tijdens de uitleg.
 -->
@@ -32,37 +32,15 @@ Korte herhaling, zodat de woorden repo en klonen een betekenis krijgen. Je hoeft
 
 ---
 
-# Issues, pull requests en CI
-
-- **Issue:** een goed omschreven taak of fout
-- **Pull request (PR):** nieuwe code, met uitleg over wat er veranderde
-- **CI:** voert bij elke PR automatisch de testen uit
-
-<Callout variant="ai" title="Dit heeft je AI later nodig">Issues en PR's blijven bewaard. Zo vindt je AI later terug waarom iets op een bepaalde manier gedaan is.</Callout>
-
-Voorbeeld uit de demo-app: [issue 1](https://github.com/yvanvds/calculate-waveforms/issues/1), [PR 7](https://github.com/yvanvds/calculate-waveforms/pull/7), [PR 8](https://github.com/yvanvds/calculate-waveforms/pull/8)
-
-<!--
-3 minuten.
-
-Open issue 1 en PR 7 van de demo-app als voorbeeld. Toon alleen dat er duidelijk staat wat er moet gebeuren en wat er veranderde. De technische woorden hoeven ze niet te begrijpen. PR 8 toont waarom bepaalde keuzes gemaakt zijn, bijvoorbeeld hoe het geluid begrensd wordt.
-
-CI staat voor continuous integration. Eén zin volstaat: CI voert de testen uit. Waarom je testen nodig hebt, komt straks in het theorieblok.
-
-Hoe dit alles samenwerkt, leggen we later uit in het tweede theorieblok.
--->
-
----
-
 # Publiek of privaat?
 
 | Op een gratis account | Publiek | Privaat |
 |---|---|---|
 | Wie kan erbij? | Iedereen op internet | Jij en wie jij toegang geeft |
-| CI | Gratis | $12 tegoed per maand |
+| Automatische controles | Gratis | $12 tegoed per maand |
 | Site op GitHub Pages | Kan | Kan niet: de repo moet publiek zijn |
 
-<Callout title="Tegoed op?">Zonder betaalmethode op je account stopt CI, tot het tegoed volgende maand terugkomt.</Callout>
+<Callout title="Tegoed op?">Zonder betaalmethode op je account stoppen die controles, tot het tegoed volgende maand terugkomt.</Callout>
 
 <small>Bron: GitHub Docs, nagekeken op 7 november 2026.</small>
 
@@ -74,6 +52,8 @@ table {
 
 <!--
 3 minuten.
+
+De automatische controles heten CI. Wat ze doen, komt pas in het tweede theorieblok aan bod: hier gaat het alleen over wat ze kosten.
 
 CI is dus niet de reden om publiek te werken: ook een private repo krijgt CI. De echte beperking zit bij GitHub Pages. Daarmee publiceer je gratis een website, maar op een gratis account moet de repo dan publiek zijn.
 
