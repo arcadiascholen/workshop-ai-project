@@ -8,8 +8,6 @@ eyebrow: Zelf doen
 <!--
 0:55, 20 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
 
-De slides in dit bestand tellen op tot 18 minuten. De andere 2 minuten zijn voor de slides over toestemmingsvragen (#16) en het design system (#6). Zolang die er niet staan, is dat extra marge bij /setup.
-
 Codex: je start een skill met $ in plaats van /, dus $setup. De stappen lopen gelijk. Zie docs/CODEX.md in de template.
 -->
 
@@ -45,6 +43,38 @@ De skills staan in de map .claude/skills van je project. Er zijn er nog meer: /w
 -->
 
 ---
+
+# Je AI vraagt soms toestemming
+
+Dat is normaal, en geen fout. Je AI kan niet zomaar om het even welk programma uitvoeren: soms moet jij eerst akkoord geven.
+
+- **Gewone stappen** mogen zonder vragen, zo valt `/work-issues` niet stil
+- **Gevaarlijke dingen** zijn geblokkeerd, zoals je repo verwijderen
+- **Al de rest** vraagt je AI eerst aan jou. Kijk dus af en toe of je AI op je wacht.
+
+<Callout title="Krijg je een vraag met Yes en No?">Lees wat er staat. Twijfel je? Kies No en vraag wat het doet en waarom.</Callout>
+
+<!--
+1 minuut. Zeg dit voor iedereen aan /setup begint, dan schrikt niemand van de eerste vraag.
+
+De boodschap is geruststellend: een toestemmingsvraag is een veiligheidsmaatregel en geen fout. Er is niets misgelopen.
+
+Wat de template precies toelaat, staat in .claude/settings.json en in de README:
+
+- Mag zonder vragen: bestanden in je project aanpassen, de gewone Git- en GitHub-commando's, en de commando's om je app te installeren, te bouwen en te testen.
+- Mag nooit: de geschiedenis op GitHub overschrijven, niet-opgeslagen werk weggooien of je repo verwijderen.
+- Al de rest: je AI vraagt het eerst. Een tool op je laptop installeren, zoals met winget, hoort daarbij.
+
+Dit is de lijst waarvoor Claude Code waarschuwde bij de vertrouwensvraag, op de slide "Open je project". Die vraag zelf herhaal je niet.
+
+Zeg dus niet: druk altijd op Yes. Kies je No, dan gebeurt het niet. Je AI wacht dan op wat je zegt, en je kan gewoon vragen wat het commando doet. Dat hebben we nagekeken in Claude Code 2.1.319. Daar staan ook opties als "don't ask again" en "switch to auto mode" tussen. Die heb je vandaag niet nodig.
+
+Af en toe kijken of je AI wacht, komt terug op de slide "Je AI werkt verder, jij luistert".
+
+Codex: dit werkt anders, met een automatische beoordelaar. Zie "Hoe de toestemmingen werken" in docs/CODEX.md van de template.
+-->
+
+---
 layout: handson
 ---
 
@@ -66,7 +96,7 @@ Herhaal de keuzehulp niet: die staat op de laatste slide van het theorieblok. Da
 
 Doe het voor op het scherm: typ /setup en toon de eerste vraag. Laat daarna iedereen zelf starten.
 
-/setup vraagt ook wat er zeker altijd moet blijven werken. De testen hoef je niet zelf te schrijven. Over de vormgeving vraagt het niets: het vermeldt alleen dat je project een design system bevat.
+/setup vraagt ook wat er zeker altijd moet blijven werken. De testen hoef je niet zelf te schrijven. Over de vormgeving vraagt het niets: het vermeldt alleen dat je project een design system bevat, en dat je AI later een ander kan ontwerpen. Daar gaat de laatste slide van dit deel over.
 
 Wordt /setup niet gevonden? Dan staat Claude Code waarschijnlijk niet in de map van je project. Ga terug naar de slide "Open je project".
 
@@ -102,7 +132,7 @@ Moet de terminal na een installatie opnieuw starten? Je AI legt uit hoe. Typ daa
 
 Nog niet aangemeld bij GitHub? /setup kijkt dat na, en vraagt je om in de prompt ! gh auth login te typen.
 
-Tijdslimiet: om 1:10 ga je verder. Wie dan nog bezig is, gebruikt de prompt "Achterop?" en werkt verder tijdens de volgende slides.
+Tijdslimiet: om 1:11 ga je verder. Wie dan nog bezig is, gebruikt de prompt "Achterop?" en werkt verder tijdens de volgende slides.
 -->
 
 ---
@@ -148,5 +178,27 @@ Je AI zet het document meteen op GitHub, en noemt daarna de volgende stappen: /b
 
 Later aanpassen kan altijd: vraag het gewoon aan je AI.
 
-Achterop? Geen overzicht om 1:13? Laat je AI verder werken, en doe de volgende stappen mee zodra het document er is.
+Achterop? Geen overzicht om 1:14? Laat je AI verder werken, en doe de volgende stappen mee zodra het document er is.
+-->
+
+---
+
+# Liever een andere stijl?
+
+Je project bevat een design system: vaste kleuren, lettertypes en onderdelen. Je AI gebruikt het vanzelf voor je app.
+
+Je AI kan ook een nieuw ontwerpen dat het huidige vervangt. Dat doen we vandaag niet: dit is iets voor thuis.
+
+<PromptBlock label="Thuis, eerst dit">/create-issues Ontwerp een nieuw design system in deze stijl: [omschrijf de stijl]. Vervang het huidige in design-system/ en pas de app aan.</PromptBlock>
+
+<PromptBlock label="Daarna, met de nummers die je AI noemt">/work-issues [de nummers]</PromptBlock>
+
+<!--
+1 minuut. Niet uitvoeren: dit is thuiswerk, want de workshop duurt al lang genoeg. Vermeld het, en ga meteen door.
+
+Waarom het erin zit: /setup heeft het net vermeld, en sommigen zullen vragen of hun app er dan zo moet uitzien. Dat hoeft niet.
+
+/create-issues en /work-issues doen we straks samen. Thuis ken je ze dus al.
+
+Getest op een kopie van de oefenapp, met dezelfde opdracht maar zonder /create-issues: je AI verving de kleuren en lettertypes in design-system/ en paste de app aan. De app bouwt en de gewone tests slagen. Het Arcadia-logo bleef staan. De volledige weg met /create-issues en /work-issues is met deze prompt niet getest.
 -->
