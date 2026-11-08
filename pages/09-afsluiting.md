@@ -200,9 +200,9 @@ Om 1:58 ga je verder.
 
 Zo werk je thuis verder: `/create-issues`, en daarna `/work-issues`.
 
-<Callout title="Een nieuwe functie?">Praat er eerst over met <code>/discuss</code>. Je AI denkt mee, maar maakt nog geen issues of code.</Callout>
+<Callout title="Een nieuwe functie?">Praat er eerst over met <code>/discuss</code>. Je AI denkt mee en kan je code lezen, maar maakt nog geen issues of code.</Callout>
 
-<Callout variant="ai" title="Je AI is nog bezig?">Laat je laptop open tot die klaar is, ook na de workshop.</Callout>
+<Callout variant="ai" title="Je AI is nog bezig?">Sluit je laptop. Thuis loopt de sessie meestal vanzelf weer verder. Als dat niet zo is, typ je gewoon 'Continue' in die sessie.</Callout>
 
 <!--
 2 minuten. Sluit af met wat ze nu hebben, zoals de omschrijving van de workshop beloofde. Thuis open je je AI in de map van je project, zoals vandaag.

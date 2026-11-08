@@ -3,7 +3,7 @@ layout: section
 eyebrow: Theorie
 ---
 
-# Platformen en frameworks
+# Platformen, frameworks en testen
 
 <!--
 0:32, 18 minuten voor het hele deel. Op deze slide: 0 minuten, ga meteen door.
@@ -47,6 +47,8 @@ Het platform is de plek waar je app werkt. Dit is de eenvoudigste keuze.
 
 <Callout title="Browsergeheugen">Dat werkt alleen op dat toestel en in die browser. Wordt het gewist, dan is alles weg.</Callout>
 
+Een voorbeeld: [Debat app voor mijn cursus esthetica](https://yvanvds.github.io/cursus-esthetica/graffiti-en-street-art/debat/)
+
 <!--
 2 minuten.
 
@@ -67,6 +69,7 @@ Een backend is een extra dienst die gegevens bewaart, en die je site kan bereike
 
 - Nodig om aan te melden, of om gegevens te delen tussen gebruikers
 - Je hebt een account nodig bij een externe dienst, bijvoorbeeld Firebase
+- een voorbeeld: [app voor groepsreizen](https://pebble.world/)
 - Vandaag doen we dit niet. Later kan je je AI vragen naar Firebase of alternatieven.
 
 <Callout variant="warning" title="Firebase en je kredietkaart">Het gratis Spark-plan vraagt geen betaalmethode. Code op de server of bestanden bewaren vraagt het Blaze-plan, en dat vraagt wel een betaalmethode.</Callout>
@@ -104,6 +107,7 @@ Een programma dat op je eigen computer draait. De app maken is niet moeilijker, 
 - Samenwerken met andere programma's op je computer
 - Werkt ook zonder internet
 - Delen kan als release op GitHub: een versie die anderen kunnen downloaden
+- Een voorbeeld: [AI Tutor voor Python](https://yvanvds.github.io/AI-tutor-Python/)
 
 <Callout variant="warning" title="Windows waarschuwt bij onbekende software">Daar raak je voorbij als je het even voordoet. Voor één les is dat minder de moeite, voor een tool die je het hele jaar gebruikt wel.</Callout>
 
@@ -120,8 +124,8 @@ De waarschuwing is de enige echte horde. Ook leerlingen raken daar voorbij, als 
 | Situatie | Platform | Waarom? |
 |---|---|---|
 | Eén visualisatie van zwaartekracht, voor één les | **Statische website** | Niets bewaren, en een link is genoeg |
-| Een oefentool die leerlingen het hele jaar gebruiken | **Website of lokale app** | Dat hangt ervan af of ze moeten kunnen bewaren |
-| Een eigen tool met punten of leerlingnotities | **Lokale app** | Die gegevens blijven op je eigen laptop |
+| Een oefentool die leerlingen het hele jaar gebruiken | **Website of lokale app** | Dat hangt ervan af hoe complex die is |
+| Een eigen tool met punten of leerlingnotities | **Site met backend of Lokale app** | Die gegevens blijven op je eigen laptop |
 
 <style>
 table {
@@ -153,7 +157,7 @@ Code die anderen al geschreven hebben, en die al antwoorden geeft op vragen zoal
 - Hoe werken sneltoetsen?
 - Hoe werken de onderdelen samen?
 
-<Callout variant="ai" title="Zonder framework moet je AI alles zelf bedenken">Daarom stelt /setup altijd een framework voor.</Callout>
+<Callout variant="ai" title="Zonder framework moet je AI alles zelf bedenken en maakt die meer fouten">Daarom stelt /setup altijd een framework voor.</Callout>
 
 <!--
 1 minuut.

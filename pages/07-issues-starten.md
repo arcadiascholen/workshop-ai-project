@@ -25,6 +25,7 @@ Een issue is een goed omschreven taak. Je AI schrijft ze voor jou.
 
 - Reken op 3 tot 8 issues, in de volgorde waarin ze gemaakt moeten worden
 - Op het einde toont je AI een lijst met nummers en titels
+- een [voorbeeld](https://github.com/yvanvds/calculate-waveforms/issues) met afgesloten issues.
 
 <!--
 4 minuten.
@@ -49,7 +50,7 @@ Je issues staan op GitHub. Ga ze zelf bekijken.
 3. Open één issue en lees het helemaal: de inhoud is gedetailleerd
 4. Kies bovenaan tussen **Open** en **Closed**: zo zie je ook de issues die al klaar zijn
 
-<Callout variant="ai" title="Wat staat er in een issue?">Drie kopjes: Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar?</Callout>
+<Callout variant="ai" title="Wat staat er in een issue?">Drie delen: Waarom is dit nodig?, Gewenst resultaat en Wanneer is dit klaar?</Callout>
 
 <!--
 2 minuten.
@@ -99,7 +100,7 @@ Achterop? Start dit zodra je issues er zijn, ook tijdens het theorieblok. Lukt h
 - Laat je laptop open, en het venster staan
 - **Kijk af en toe of je AI op je wacht**
 
-<Callout variant="ai" title="Wacht je AI op jou?">Lees de vraag en antwoord kort. Begrijp je ze niet, vraag dan wat het betekent. Daarna werkt je AI verder.</Callout>
+<Callout variant="ai" title="Wacht je AI op jou?">Lees de vraag en antwoord kort. Begrijp je ze niet, vraag dan wat het betekent. Daarna werkt je AI verder. Krijg je teveel vragen? Schakel over naar AUTO mode.</Callout>
 
 <Callout title="Klaar met deze reeks?">Open de link van je site. Start <code>/work-issues 3 4 5</code> in een nieuwe chat, en luister daarna gewoon verder.</Callout>
 

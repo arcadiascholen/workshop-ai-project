@@ -24,9 +24,8 @@ layout: handson
 3. Geef je project een naam en kies **Public**
 4. Bevestig, en kopieer de URL van je nieuwe project uit de adresbalk
 
-<PromptBlock label="Vast?">Ik wil op GitHub een eigen project maken met de template arcadiascholen/project-template. Waar moet ik klikken?</PromptBlock>
+<PromptBlock label="Lukt het niet?">Ik wil op GitHub een eigen project maken met de template arcadiascholen/project-template. Waar moet ik klikken?</PromptBlock>
 
-<Callout title="Waarom Public?">Dat leggen we straks uit. Zet er alvast geen namen of punten van leerlingen in.</Callout>
 
 <!--
 4 minuten.
@@ -46,7 +45,7 @@ layout: handson
 
 Klonen betekent: een kopie van je project op je laptop zetten. Open de desktop-app en start een nieuwe chat, nog zonder project. Plak je eigen URL in de prompt.
 
-<PromptBlock>Maak een dev-map in mijn persoonlijke map. Kloon daar dit project naar mijn laptop: [plak hier de URL]</PromptBlock>
+<PromptBlock>Maak een dev-map in mijn persoonlijke map (niet op OneDrive!). Kloon daar dit project naar mijn laptop: [plak hier de URL]</PromptBlock>
 
 <Callout variant="warning" title="Lukt dat niet?">Dat is normaal. Op de meeste laptops staat de nodige software nog niet. Ga door naar de volgende stap.</Callout>
 
@@ -105,10 +104,17 @@ Zonder aanmelding kan je AI geen code op GitHub zetten. Dat doe je zelf: open ee
 
 <PromptBlock label="Typ dit in de terminal">gh auth login</PromptBlock>
 
+<div class="split">
+<div>
+
 - Kies **GitHub**, **HTTPS** en aanmelden via de **browser**
 - Neem de code over in je browser en bevestig
 
-<PromptBlock label="Vast?">Help me aanmelden bij GitHub met gh. Wat moet ik kiezen?</PromptBlock>
+</div>
+
+<img class="shot" src="/images/terminal.png" alt="De terminal in de zijbalk van de desktop-app, met gh auth login" style="width: 360px" />
+
+</div>
 
 <!--
 3 minuten.
@@ -128,15 +134,24 @@ layout: handson
 
 # Start je AI
 
+<div class="split">
+<div>
+
 Je project staat nu op je laptop. Open het in de desktop-app:
 
 1. Open een **nieuwe chat**
 2. Kies voor een **nieuw project**
 3. Voeg de map van je project toe, in je dev-map
+4. Kies voor 'trust workspace'
 
-Daarna vraag je:
+</div>
 
-<PromptBlock>In welke map werk je nu? Kijk ook na of git en gh werken en of ik aangemeld ben bij GitHub. Antwoord kort.</PromptBlock>
+<div class="shots" style="flex-direction: column; width: 230px; gap: 12px">
+  <img class="shot" src="/images/open-folder.png" alt="Een map kiezen bij een nieuwe chat: Open folder..." />
+  <img class="shot" src="/images/trust-workspace.png" alt="De vraag Trust this workspace?" />
+</div>
+
+</div>
 
 <!--
 5 minuten.

@@ -128,7 +128,6 @@ Je AI werkt in een vertakking van je code. Je echte app blijft ongemoeid.
 - Loopt het helemaal mis? Verwijder de branch en begin opnieuw.
 - Ook goed voor grote uitbreidingen op lange termijn: vind je intussen een fout, dan kan je de echte app nog altijd aanpassen.
 
-<Callout variant="ai" title="In de demo-app">Eén branch voor de hele reeks: codex/issues-3-6.</Callout>
 
 <style>
 .takken {
@@ -240,7 +239,7 @@ Toon ze eventueel op het tabblad Commits van PR 8.
 Eén PR bundelt het werk van de hele reeks.
 
 - **Extra controle:** CI voert de testen uit op GitHub, dus niet alleen op je laptop
-- **Geschiedenis:** wat er veranderde en waarom. Je AI kan dat later altijd terugzoeken.
+- **Geschiedenis:** wat er veranderde en waarom. Je AI kan dat later altijd terugvinden.
 
 <Callout variant="ai" title="PR 8 van de demo-app">Issues 3 tot 6 samen, met de keuzes en de testresultaten. De controle op GitHub slaagde na bijna drie minuten.</Callout>
 
@@ -262,7 +261,7 @@ PR 7 toont dezelfde flow voor de eerste reeks: issues 1 en 2, twee commits, en d
 
 ---
 
-# Komt je PR niet vooruit?
+# Gaat je PR niet vooruit?
 
 Je AI volgt de controles zelf op, en gaat verder als ze geslaagd zijn. Dat lukt niet altijd.
 
@@ -270,7 +269,7 @@ Na 10 minuten nog altijd geen vooruitgang? Vraag het dan:
 
 <PromptBlock>Kijk de pull request opnieuw na.</PromptBlock>
 
-<Callout variant="warning" title="Een controle gefaald?">Je AI probeert dat tot twee keer op te lossen. Lukt het niet, dan stopt je AI en legt die uit wat er misloopt. De code gaat dan niet naar je app.</Callout>
+<Callout variant="warning" title="Een controle gefaald?">Je AI probeert dat tot twee keer op te lossen. Lukt het niet, dan stopt je AI en legt die uit wat er misloopt. De code gaat dan niet naar je app. Je vraagt je AI dan hoe je verder gaat.</Callout>
 
 <!--
 1 minuut.

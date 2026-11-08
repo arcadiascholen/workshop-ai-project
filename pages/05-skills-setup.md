@@ -15,7 +15,7 @@ Codex: de stappen lopen gelijk. Zie docs/CODEX.md in de template.
 
 # Wat is een skill?
 
-Een vaste werkwijze voor je AI. Je start ze met een schuine streep en haar naam. In Codex typ je een dollarteken: `$setup` in plaats van `/setup`.
+Een vaste werkwijze voor je AI. In Claude Code start je ze met een schuine streep en haar naam. In Codex typ je een dollarteken: `$setup` in plaats van `/setup`.
 
 | Skill | Wat doet ze? |
 |---|---|
@@ -46,7 +46,7 @@ Op de volgende slides staat altijd /setup, /bootstrap-github enzovoort. Wie Code
 
 # Je AI vraagt soms toestemming
 
-Dat is normaal, en geen fout. Je AI kan niet zomaar om het even welk programma uitvoeren: soms moet jij eerst akkoord geven.
+Dat is normaal, en geen fout. Je AI kan niet zomaar om het even welk programma uitvoeren: soms moet jij eerst akkoord gaan.
 
 - **Gewone stappen** mogen zonder vragen, zo valt `/work-issues` niet stil
 - **Gevaarlijke dingen** zijn geblokkeerd, zoals je repo verwijderen
@@ -87,8 +87,6 @@ Eerst maak je samen met je AI duidelijk wat je project wordt.
 - Je AI stelt één vraag tegelijk, hooguit een tiental
 - Weet je het niet? Dan doet je AI een voorstel.
 - Er komt nog geen code: dat gebeurt later, via issues
-
-<PromptBlock label="Achterop?">Ik heb weinig tijd. Kies voor de rest zelf de eenvoudigste optie, en schrijf PROJECT_OVERVIEW.md. Vermeld wat je koos.</PromptBlock>
 
 <!--
 18 minuten: 2 om te starten, daarna 16 om te werken. Laat deze slide staan terwijl iedereen werkt, en loop rond.

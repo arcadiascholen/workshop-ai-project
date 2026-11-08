@@ -49,11 +49,12 @@ Er is geen vaste pauze: we zien wel wanneer we op de AI moeten wachten.
 
 # Wie heeft al een idee?
 
-- Weet je al wat je wil maken? Steek je hand op.
-- Hou het klein: wat is het kleinste dat al nuttig is?
+- Weet je al wat je wil maken?
 - Nog geen idee? Denk aan iets dat je nu veel tijd kost, in de les of bij het voorbereiden.
 
 <Callout title="Een voorbeeld">Deze demo-app over geluidsgolven, voor fysica, is gemaakt zoals in deze workshop: <a href="https://yvanvds.github.io/calculate-waveforms/" target="_blank">yvanvds.github.io/calculate-waveforms</a></Callout>
+
+
 
 <!--
 2 minuten.
@@ -66,3 +67,25 @@ De demo-app is gemaakt met de Codex-versie van de skills ($setup, $create-issues
 
 Wie nog geen idee heeft, hoeft zich geen zorgen te maken: /setup helpt daarbij.
 -->
+
+---
+
+# De prompt
+
+<div class="split">
+<div style="font-size: 19px">
+
+ik wil een app die toont hoe je rekent met waveforms. We starten met een waveform met een vrij te kiezen frequentie. Die wordt dan visueel getoond en je kan er naar luisteren. Elke wave duurt 2 seconden.
+
+Daaronder staat dan een balk met opties:
+- nieuwe waveform toevoegen
+- envelope toevoegen (met een paar opties)
+- bestaande waveform vermenigvuldigen met een decimaal getal (daarvoor heeft elke waveform dus een id nodig)
+- twee waveforms optellen
+- een waveforms met een envelope vermenigvuldigen
+
+</div>
+
+<img class="shot" src="/images/calculate-waveforms.png" alt="De demo-app Rekenen met waveforms" style="max-height: 400px" />
+
+</div>

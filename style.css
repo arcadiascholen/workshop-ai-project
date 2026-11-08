@@ -236,6 +236,34 @@ body {
   margin: 0;
 }
 
+/* Schermafbeeldingen. Ze staan in public/images en krijgen een rand en schaduw,
+   zodat een witte schermafdruk loskomt van de achtergrond. De hoogte zet je per
+   slide met een inline style (max-height), zodat niets over de rand loopt. */
+.slidev-layout .shot {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md, 8px);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.08);
+  background: #fff;
+}
+
+/* Tekst links, afbeelding rechts. */
+.slidev-layout .split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Meerdere afbeeldingen naast elkaar. */
+.slidev-layout .shots {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
 /* Een hands-on slide heeft dezelfde achtergrond als de standaard callout. De varianten
    ai en warning hebben een eigen achtergrond en blijven buiten deze regel. */
 .slidev-layout.handson .ai-callout:not(.ai-callout--ai, .ai-callout--warning) {
